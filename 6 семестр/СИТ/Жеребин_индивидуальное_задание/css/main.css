@@ -1,0 +1,123 @@
+body {
+    font-weight: 300;
+    font-size: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+.header {
+    background-color: #f2f2f2;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headerleft {
+    width: 255px;
+    padding: 10px;
+}
+
+.headercent {
+    width: 580px;
+    text-align: center;
+    padding: 10px;
+}
+
+.headerright {
+    display: block;
+    width: 255px;
+    padding: 10px;
+}
+
+.container {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media (min-width: 576px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 576px) {
+  .container {
+    width: 540px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 720px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 960px;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1140px;
+    max-width: 100%;
+  }
+}
+
+.border {
+    border: 1px solid black;
+}
+
+.center {
+    text-align: center;
+}
+
+.rignt {
+    text-align: right;
+}
+
+.left {
+    text-align: left;
+}
+
+.theme {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 10px;
+}
+
+sup {
+    vertical-align: super;
+    white-space: nowrap;
+    line-height: 1em;
+}
