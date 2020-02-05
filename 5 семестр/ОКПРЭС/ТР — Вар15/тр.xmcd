@@ -1,0 +1,953 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?validation-md5-digest a19d95dba65bfbe4b830c187529663ec?>
+<worksheet version="3.0.3" xmlns="http://schemas.mathsoft.com/worksheet30" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ws="http://schemas.mathsoft.com/worksheet30" xmlns:ml="http://schemas.mathsoft.com/math30" xmlns:u="http://schemas.mathsoft.com/units10" xmlns:p="http://schemas.mathsoft.com/provenance10">
+	<pointReleaseData/>
+	<metadata>
+		<generator>Mathcad Professional 14.1</generator>
+		<userData>
+			<title/>
+			<description/>
+			<author>User-PC</author>
+			<company>Parametric Technology Corporation</company>
+			<keywords/>
+			<revisedBy>User-PC</revisedBy>
+		</userData>
+		<identityInfo>
+			<revision>5</revision>
+			<documentID>BB7651A3-8E7E-46E4-96DC-C48F7E2DDC7F</documentID>
+			<versionID>B704F142-62DA-43D7-AB5A-700DDCFED120</versionID>
+			<parentVersionID>00000000-0000-0000-0000-000000000000</parentVersionID>
+			<branchID>00000000-0000-0000-0000-000000000000</branchID>
+		</identityInfo>
+	</metadata>
+	<settings>
+		<presentation>
+			<textRendering>
+				<textStyles>
+					<textStyle name="Normal">
+						<blockAttr margin-left="0" margin-right="0" text-indent="inherit" text-align="left" list-style-type="inherit" tabs="inherit"/>
+						<inlineAttr font-family="Arial" font-charset="0" font-size="10" font-weight="normal" font-style="normal" underline="false" line-through="false" vertical-align="baseline"/>
+					</textStyle>
+					<textStyle name="Heading 1">
+						<blockAttr margin-left="0" margin-right="0" text-indent="inherit" text-align="left" list-style-type="inherit" tabs="inherit"/>
+						<inlineAttr font-family="Arial" font-charset="0" font-size="14" font-weight="bold" font-style="normal" underline="false" line-through="false" vertical-align="baseline"/>
+					</textStyle>
+					<textStyle name="Heading 2">
+						<blockAttr margin-left="0" margin-right="0" text-indent="inherit" text-align="left" list-style-type="inherit" tabs="inherit"/>
+						<inlineAttr font-family="Arial" font-charset="0" font-size="12" font-weight="bold" font-style="italic" underline="false" line-through="false" vertical-align="baseline"/>
+					</textStyle>
+					<textStyle name="Heading 3">
+						<blockAttr margin-left="0" margin-right="0" text-indent="inherit" text-align="left" list-style-type="inherit" tabs="inherit"/>
+						<inlineAttr font-family="Arial" font-charset="0" font-size="12" font-weight="normal" font-style="normal" underline="false" line-through="false" vertical-align="baseline"/>
+					</textStyle>
+					<textStyle name="Paragraph">
+						<blockAttr margin-left="0" margin-right="0" text-indent="21" text-align="left" list-style-type="inherit" tabs="inherit"/>
+						<inlineAttr font-family="Arial" font-charset="0" font-size="10" font-weight="normal" font-style="normal" underline="false" line-through="false" vertical-align="baseline"/>
+					</textStyle>
+					<textStyle name="List">
+						<blockAttr margin-left="14.25" margin-right="0" text-indent="-14.25" text-align="left" list-style-type="inherit" tabs="inherit"/>
+						<inlineAttr font-family="Arial" font-charset="0" font-size="10" font-weight="normal" font-style="normal" underline="false" line-through="false" vertical-align="baseline"/>
+					</textStyle>
+					<textStyle name="Indent">
+						<blockAttr margin-left="108" margin-right="0" text-indent="inherit" text-align="left" list-style-type="inherit" tabs="inherit"/>
+						<inlineAttr font-family="Arial" font-charset="0" font-size="10" font-weight="normal" font-style="normal" underline="false" line-through="false" vertical-align="baseline"/>
+					</textStyle>
+					<textStyle name="Title">
+						<blockAttr margin-left="0" margin-right="0" text-indent="inherit" text-align="center" list-style-type="inherit" tabs="inherit"/>
+						<inlineAttr font-family="Times New Roman" font-charset="0" font-size="24" font-weight="bold" font-style="normal" underline="false" line-through="false" vertical-align="baseline"/>
+					</textStyle>
+					<textStyle name="Subtitle" base-style="Title">
+						<blockAttr margin-left="0" margin-right="0" text-indent="inherit" text-align="center" list-style-type="inherit" tabs="inherit"/>
+						<inlineAttr font-family="Times New Roman" font-charset="0" font-size="18" font-weight="normal" font-style="normal" underline="false" line-through="false" vertical-align="baseline"/>
+					</textStyle>
+				</textStyles>
+			</textRendering>
+			<mathRendering equation-color="#000">
+				<operators multiplication="narrow-dot" derivative="derivative" literal-subscript="large" definition="colon-equal" global-definition="triple-equal" local-definition="left-arrow" equality="bold-equal" symbolic-evaluation="right-arrow"/>
+				<mathStyles>
+					<mathStyle name="Variables" font-family="Times New Roman" font-charset="0" font-size="10" font-weight="normal" font-style="normal" underline="false"/>
+					<mathStyle name="Constants" font-family="Times New Roman" font-charset="0" font-size="10" font-weight="normal" font-style="normal" underline="false"/>
+					<mathStyle name="User 1" font-family="Arial" font-charset="0" font-size="10" font-weight="normal" font-style="normal" underline="false"/>
+					<mathStyle name="User 2" font-family="Courier New" font-charset="0" font-size="10" font-weight="normal" font-style="normal" underline="false"/>
+					<mathStyle name="User 3" font-family="Arial" font-charset="0" font-size="10" font-weight="bold" font-style="normal" underline="false"/>
+					<mathStyle name="User 4" font-family="Times New Roman" font-charset="0" font-size="10" font-weight="normal" font-style="italic" underline="false"/>
+					<mathStyle name="User 5" font-family="Times New Roman" font-charset="0" font-size="10" font-weight="normal" font-style="normal" underline="false"/>
+					<mathStyle name="User 6" font-family="Arial" font-charset="0" font-size="10" font-weight="normal" font-style="normal" underline="false"/>
+					<mathStyle name="User 7" font-family="Times New Roman" font-charset="0" font-size="10" font-weight="normal" font-style="normal" underline="false"/>
+					<mathStyle name="Math Text Font" font-family="Times New Roman" font-charset="0" font-size="14" font-weight="normal" font-style="normal" underline="false"/>
+				</mathStyles>
+				<dimensionNames mass="mass" length="length" time="time" current="current" thermodynamic-temperature="temperature" luminous-intensity="luminosity" amount-of-substance="substance" display="false"/>
+				<symbolics derivation-steps-style="vertical-insert" show-comments="false" evaluate-in-place="false"/>
+				<results numeric-only="true">
+					<general use-engineering-format="true" precision="3" show-trailing-zeros="false" radix="dec" complex-threshold="10" zero-threshold="15" imaginary-value="i" exponential-threshold="3"/>
+					<matrix display-style="auto" expand-nested-arrays="false"/>
+					<unit format-units="true" simplify-units="true" fractional-unit-exponent="false"/>
+				</results>
+			</mathRendering>
+			<pageModel show-page-frame="false" show-header-frame="false" show-footer-frame="false" header-footer-start-page="1" paper-code="1" orientation="portrait" print-single-page-width="false" page-width="612" page-height="792">
+				<margins left="86.4" right="86.4" top="86.4" bottom="86.4"/>
+				<header use-full-page-width="false"/>
+				<footer use-full-page-width="false"/>
+			</pageModel>
+			<colorModel background-color="#fff" default-highlight-color="#ffff80"/>
+			<language math="ru" UI="ru"/>
+		</presentation>
+		<calculation>
+			<builtInVariables array-origin="0" convergence-tolerance="0.001" constraint-tolerance="0.001" random-seed="1" prn-precision="4" prn-col-width="8"/>
+			<calculationBehavior automatic-recalculation="true" matrix-strict-singularity-check="false" optimize-expressions="false" exact-boolean="true" strings-use-origin="false" zero-over-zero="error">
+				<compatibility multiple-assignment="MC12" local-assignment="MC11"/>
+			</calculationBehavior>
+			<units>
+				<currentUnitSystem name="si" customized="false"/>
+			</units>
+		</calculation>
+		<editor view-annotations="false" view-regions="false">
+			<ruler is-visible="false" ruler-unit="in"/>
+			<plotTemplate>
+				<xy item-idref="1"/>
+			</plotTemplate>
+			<grid granularity-x="6" granularity-y="6"/>
+		</editor>
+		<fileFormat image-type="image/png" image-quality="75" save-numeric-results="true" exclude-large-results="true" save-text-images="false" screen-dpi="96"/>
+		<miscellaneous>
+			<handbook handbook-region-tag-ub="78" can-delete-original-handbook-regions="true" can-delete-user-regions="true" can-print="true" can-copy="true" can-save="true" file-permission-mask="4294967295"/>
+		</miscellaneous>
+	</settings>
+	<regions>
+		<region region-id="109" left="36" top="27" width="30" height="12.75" align-x="48.75" align-y="36" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+			<math optimize="false" disable-calc="false">
+				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+					<ml:id xml:space="preserve">E</ml:id>
+					<ml:real>30</ml:real>
+				</ml:define>
+			</math>
+			<rendering item-idref="2"/>
+		</region>
+		<region region-id="110" left="36" top="45" width="51" height="18.75" align-x="45.75" align-y="60" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+			<math optimize="false" disable-calc="false">
+				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+					<ml:id xml:space="preserve">I</ml:id>
+					<ml:apply>
+						<ml:mult/>
+						<ml:real>30</ml:real>
+						<ml:apply>
+							<ml:pow/>
+							<ml:real>10</ml:real>
+							<ml:real>-3</ml:real>
+						</ml:apply>
+					</ml:apply>
+				</ml:define>
+			</math>
+			<rendering item-idref="3"/>
+		</region>
+		<region region-id="111" left="36" top="75" width="34.5" height="12.75" align-x="53.25" align-y="84" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+			<math optimize="false" disable-calc="false">
+				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+					<ml:id xml:space="preserve">R1</ml:id>
+					<ml:real>15</ml:real>
+				</ml:define>
+			</math>
+			<rendering item-idref="4"/>
+		</region>
+		<region region-id="112" left="36" top="99" width="34.5" height="12.75" align-x="53.25" align-y="108" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+			<math optimize="false" disable-calc="false">
+				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+					<ml:id xml:space="preserve">R2</ml:id>
+					<ml:real>25</ml:real>
+				</ml:define>
+			</math>
+			<rendering item-idref="5"/>
+		</region>
+		<region region-id="113" left="36" top="123" width="39" height="12.75" align-x="53.25" align-y="132" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+			<math optimize="false" disable-calc="false">
+				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+					<ml:id xml:space="preserve">R3</ml:id>
+					<ml:real>100</ml:real>
+				</ml:define>
+			</math>
+			<rendering item-idref="6"/>
+		</region>
+		<region region-id="114" left="36" top="141" width="46.5" height="18.75" align-x="53.25" align-y="156" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+			<math optimize="false" disable-calc="false">
+				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+					<ml:id xml:space="preserve">R4</ml:id>
+					<ml:apply>
+						<ml:mult/>
+						<ml:real>5</ml:real>
+						<ml:apply>
+							<ml:pow/>
+							<ml:real>10</ml:real>
+							<ml:real>6</ml:real>
+						</ml:apply>
+					</ml:apply>
+				</ml:define>
+			</math>
+			<rendering item-idref="7"/>
+		</region>
+		<region region-id="115" left="36" top="165" width="54" height="18.75" align-x="53.25" align-y="180" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+			<math optimize="false" disable-calc="false">
+				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+					<ml:id xml:space="preserve">C1</ml:id>
+					<ml:apply>
+						<ml:mult/>
+						<ml:real>1</ml:real>
+						<ml:apply>
+							<ml:pow/>
+							<ml:real>10</ml:real>
+							<ml:real>-6</ml:real>
+						</ml:apply>
+					</ml:apply>
+				</ml:define>
+			</math>
+			<rendering item-idref="8"/>
+		</region>
+		<region region-id="116" left="36" top="189" width="54" height="18.75" align-x="53.25" align-y="204" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+			<math optimize="false" disable-calc="false">
+				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+					<ml:id xml:space="preserve">C2</ml:id>
+					<ml:apply>
+						<ml:mult/>
+						<ml:real>2</ml:real>
+						<ml:apply>
+							<ml:pow/>
+							<ml:real>10</ml:real>
+							<ml:real>-6</ml:real>
+						</ml:apply>
+					</ml:apply>
+				</ml:define>
+			</math>
+			<rendering item-idref="9"/>
+		</region>
+		<region region-id="117" left="36" top="213" width="55.5" height="18.75" align-x="48" align-y="228" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+			<math optimize="false" disable-calc="false">
+				<ml:define warning="WarnRedefinedBIUnit" xmlns:ml="http://schemas.mathsoft.com/math30">
+					<ml:id xml:space="preserve">L</ml:id>
+					<ml:apply>
+						<ml:mult/>
+						<ml:real>0.5</ml:real>
+						<ml:apply>
+							<ml:pow/>
+							<ml:real>10</ml:real>
+							<ml:real>-3</ml:real>
+						</ml:apply>
+					</ml:apply>
+				</ml:define>
+			</math>
+			<rendering item-idref="10"/>
+		</region>
+		<region region-id="118" left="60" top="248.25" width="100.5" height="27.75" align-x="89.25" align-y="264" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+			<math optimize="false" disable-calc="false">
+				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+					<ml:id xml:space="preserve">Rsum</ml:id>
+					<ml:eval placeholderMultiplicationStyle="default">
+						<ml:apply>
+							<ml:div/>
+							<ml:apply>
+								<ml:mult/>
+								<ml:id xml:space="preserve">R3</ml:id>
+								<ml:id xml:space="preserve">R2</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:plus/>
+								<ml:id xml:space="preserve">R3</ml:id>
+								<ml:id xml:space="preserve">R2</ml:id>
+							</ml:apply>
+						</ml:apply>
+						<result xmlns="http://schemas.mathsoft.com/math30">
+							<ml:real>20</ml:real>
+						</result>
+					</ml:eval>
+				</ml:define>
+			</math>
+			<rendering item-idref="11"/>
+		</region>
+		<region region-id="131" left="54" top="290.25" width="150" height="27.75" align-x="68.25" align-y="306" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+			<math optimize="false" disable-calc="false">
+				<ml:define warning="WarnRedefinedBIFunction" xmlns:ml="http://schemas.mathsoft.com/math30">
+					<ml:id xml:space="preserve">I1</ml:id>
+					<ml:eval placeholderMultiplicationStyle="default">
+						<ml:apply>
+							<ml:div/>
+							<ml:id xml:space="preserve">E</ml:id>
+							<ml:apply>
+								<ml:plus/>
+								<ml:id xml:space="preserve">Rsum</ml:id>
+								<ml:id xml:space="preserve">R1</ml:id>
+							</ml:apply>
+						</ml:apply>
+						<result xmlns="http://schemas.mathsoft.com/math30">
+							<ml:real>0.8571428571428571</ml:real>
+						</result>
+					</ml:eval>
+				</ml:define>
+			</math>
+			<rendering item-idref="12"/>
+		</region>
+		<region region-id="168" left="228" top="308.25" width="116.25" height="27.75" align-x="261.75" align-y="324" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+			<math optimize="false" disable-calc="false">
+				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+					<ml:id xml:space="preserve">Rsum1</ml:id>
+					<ml:eval placeholderMultiplicationStyle="default">
+						<ml:apply>
+							<ml:div/>
+							<ml:apply>
+								<ml:mult/>
+								<ml:id xml:space="preserve">R1</ml:id>
+								<ml:id xml:space="preserve">R2</ml:id>
+							</ml:apply>
+							<ml:apply>
+								<ml:plus/>
+								<ml:id xml:space="preserve">R1</ml:id>
+								<ml:id xml:space="preserve">R2</ml:id>
+							</ml:apply>
+						</ml:apply>
+						<result xmlns="http://schemas.mathsoft.com/math30">
+							<ml:real>9.375</ml:real>
+						</result>
+					</ml:eval>
+				</ml:define>
+			</math>
+			<rendering item-idref="13"/>
+		</region>
+		<region region-id="133" left="54" top="326.25" width="126.75" height="27.75" align-x="105.75" align-y="342" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+			<math optimize="false" disable-calc="false">
+				<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+					<ml:apply>
+						<ml:mult/>
+						<ml:id xml:space="preserve">I1</ml:id>
+						<ml:apply>
+							<ml:div/>
+							<ml:id xml:space="preserve">R3</ml:id>
+							<ml:apply>
+								<ml:plus/>
+								<ml:id xml:space="preserve">R2</ml:id>
+								<ml:id xml:space="preserve">R3</ml:id>
+							</ml:apply>
+						</ml:apply>
+					</ml:apply>
+					<result xmlns="http://schemas.mathsoft.com/math30">
+						<ml:real>0.68571428571428572</ml:real>
+					</result>
+				</ml:eval>
+			</math>
+			<rendering item-idref="14"/>
+		</region>
+		<region region-id="134" left="54" top="368.25" width="126.75" height="27.75" align-x="105.75" align-y="384" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+			<math optimize="false" disable-calc="false">
+				<ml:eval placeholderMultiplicationStyle="default" xmlns:ml="http://schemas.mathsoft.com/math30">
+					<ml:apply>
+						<ml:mult/>
+						<ml:id xml:space="preserve">I1</ml:id>
+						<ml:apply>
+							<ml:div/>
+							<ml:id xml:space="preserve">R2</ml:id>
+							<ml:apply>
+								<ml:plus/>
+								<ml:id xml:space="preserve">R2</ml:id>
+								<ml:id xml:space="preserve">R3</ml:id>
+							</ml:apply>
+						</ml:apply>
+					</ml:apply>
+					<result xmlns="http://schemas.mathsoft.com/math30">
+						<ml:real>0.17142857142857143</ml:real>
+					</result>
+				</ml:eval>
+			</math>
+			<rendering item-idref="15"/>
+		</region>
+		<region region-id="135" left="60" top="405" width="90" height="12.75" align-x="78" align-y="414" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+			<math optimize="false" disable-calc="false">
+				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+					<ml:id xml:space="preserve">U2</ml:id>
+					<ml:eval placeholderMultiplicationStyle="default">
+						<ml:apply>
+							<ml:mult/>
+							<ml:id xml:space="preserve">I1</ml:id>
+							<ml:id xml:space="preserve">R1</ml:id>
+						</ml:apply>
+						<result xmlns="http://schemas.mathsoft.com/math30">
+							<ml:real>12.857142857142856</ml:real>
+						</result>
+					</ml:eval>
+				</ml:define>
+			</math>
+			<rendering item-idref="16"/>
+		</region>
+		<region region-id="144" left="30" top="464.25" width="129" height="29.25" align-x="42" align-y="480" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+			<math optimize="false" disable-calc="false">
+				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+					<ml:id xml:space="preserve">f</ml:id>
+					<ml:eval placeholderMultiplicationStyle="default">
+						<ml:apply>
+							<ml:div/>
+							<ml:real>1</ml:real>
+							<ml:apply>
+								<ml:mult/>
+								<ml:apply>
+									<ml:mult/>
+									<ml:real>2</ml:real>
+									<ml:id xml:space="preserve">π</ml:id>
+								</ml:apply>
+								<ml:apply>
+									<ml:sqrt/>
+									<ml:apply>
+										<ml:mult/>
+										<ml:id xml:space="preserve">L</ml:id>
+										<ml:id xml:space="preserve">C1</ml:id>
+									</ml:apply>
+								</ml:apply>
+							</ml:apply>
+						</ml:apply>
+						<result xmlns="http://schemas.mathsoft.com/math30">
+							<ml:real>7117.62543417177</ml:real>
+						</result>
+					</ml:eval>
+				</ml:define>
+			</math>
+			<rendering item-idref="17"/>
+		</region>
+		<region region-id="157" left="30" top="498.75" width="83.25" height="29.25" align-x="42" align-y="516" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+			<math optimize="false" disable-calc="false">
+				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+					<ml:id xml:space="preserve">ρ</ml:id>
+					<ml:eval placeholderMultiplicationStyle="default">
+						<ml:apply>
+							<ml:sqrt/>
+							<ml:apply>
+								<ml:div/>
+								<ml:id xml:space="preserve">L</ml:id>
+								<ml:id xml:space="preserve">C1</ml:id>
+							</ml:apply>
+						</ml:apply>
+						<result xmlns="http://schemas.mathsoft.com/math30">
+							<ml:real>22.360679774997898</ml:real>
+						</result>
+					</ml:eval>
+				</ml:define>
+			</math>
+			<rendering item-idref="18"/>
+		</region>
+		<region region-id="177" left="174" top="527.25" width="126" height="42.75" align-x="192" align-y="558" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+			<math optimize="false" disable-calc="false">
+				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+					<ml:id xml:space="preserve">Q1</ml:id>
+					<ml:eval placeholderMultiplicationStyle="default">
+						<ml:apply>
+							<ml:div/>
+							<ml:apply>
+								<ml:plus/>
+								<ml:apply>
+									<ml:div/>
+									<ml:apply>
+										<ml:mult/>
+										<ml:id xml:space="preserve">R1</ml:id>
+										<ml:id xml:space="preserve">R2</ml:id>
+									</ml:apply>
+									<ml:apply>
+										<ml:plus/>
+										<ml:id xml:space="preserve">R1</ml:id>
+										<ml:id xml:space="preserve">R2</ml:id>
+									</ml:apply>
+								</ml:apply>
+								<ml:id xml:space="preserve">R3</ml:id>
+							</ml:apply>
+							<ml:id xml:space="preserve">ρ</ml:id>
+						</ml:apply>
+						<result xmlns="http://schemas.mathsoft.com/math30">
+							<ml:real>4.8913987007807895</ml:real>
+						</result>
+					</ml:eval>
+				</ml:define>
+			</math>
+			<rendering item-idref="19"/>
+		</region>
+		<region region-id="178" left="30" top="533.25" width="137.25" height="42.75" align-x="43.5" align-y="564" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+			<math optimize="false" disable-calc="false">
+				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+					<ml:id xml:space="preserve">Q</ml:id>
+					<ml:eval placeholderMultiplicationStyle="default">
+						<ml:apply>
+							<ml:div/>
+							<ml:apply>
+								<ml:div/>
+								<ml:apply>
+									<ml:mult/>
+									<ml:id xml:space="preserve">R1</ml:id>
+									<ml:id xml:space="preserve">R2</ml:id>
+								</ml:apply>
+								<ml:apply>
+									<ml:plus/>
+									<ml:id xml:space="preserve">R1</ml:id>
+									<ml:id xml:space="preserve">R2</ml:id>
+								</ml:apply>
+							</ml:apply>
+							<ml:id xml:space="preserve">ρ</ml:id>
+						</ml:apply>
+						<result xmlns="http://schemas.mathsoft.com/math30">
+							<ml:real>0.41926274578121053</ml:real>
+						</result>
+					</ml:eval>
+				</ml:define>
+			</math>
+			<rendering item-idref="20"/>
+		</region>
+		<region region-id="182" left="30" top="584.25" width="105" height="27.75" align-x="49.5" align-y="600" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+			<math optimize="false" disable-calc="false">
+				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+					<ml:id xml:space="preserve">Δf</ml:id>
+					<ml:eval placeholderMultiplicationStyle="default">
+						<ml:apply>
+							<ml:div/>
+							<ml:id xml:space="preserve">f</ml:id>
+							<ml:id xml:space="preserve">Q</ml:id>
+						</ml:apply>
+						<result xmlns="http://schemas.mathsoft.com/math30">
+							<ml:real>16976.527263135504</ml:real>
+						</result>
+					</ml:eval>
+				</ml:define>
+			</math>
+			<rendering item-idref="21"/>
+		</region>
+		<region region-id="179" left="174" top="584.25" width="108" height="27.75" align-x="196.5" align-y="600" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+			<math optimize="false" disable-calc="false">
+				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+					<ml:id xml:space="preserve">Δf1</ml:id>
+					<ml:eval placeholderMultiplicationStyle="default">
+						<ml:apply>
+							<ml:div/>
+							<ml:id xml:space="preserve">f</ml:id>
+							<ml:id xml:space="preserve">Q1</ml:id>
+						</ml:apply>
+						<result xmlns="http://schemas.mathsoft.com/math30">
+							<ml:real>1455.1309082687574</ml:real>
+						</result>
+					</ml:eval>
+				</ml:define>
+			</math>
+			<rendering item-idref="22"/>
+		</region>
+		<region region-id="69" left="120" top="1034.25" width="93" height="29.25" align-x="132" align-y="1050" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+			<math error="Эта переменная не определена." optimize="false" disable-calc="false">
+				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+					<ml:id xml:space="preserve">f</ml:id>
+					<ml:eval placeholderMultiplicationStyle="default">
+						<ml:apply>
+							<ml:div/>
+							<ml:real>1</ml:real>
+							<ml:apply>
+								<ml:mult/>
+								<ml:apply>
+									<ml:mult/>
+									<ml:real>2</ml:real>
+									<ml:id xml:space="preserve">π</ml:id>
+								</ml:apply>
+								<ml:apply>
+									<ml:sqrt/>
+									<ml:apply>
+										<ml:mult/>
+										<ml:id xml:space="preserve">L1</ml:id>
+										<ml:id xml:space="preserve">C1</ml:id>
+									</ml:apply>
+								</ml:apply>
+							</ml:apply>
+						</ml:apply>
+					</ml:eval>
+				</ml:define>
+			</math>
+			<rendering item-idref="23"/>
+		</region>
+		<region region-id="71" left="126" top="1086.75" width="63" height="29.25" align-x="138" align-y="1104" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+			<math error="Эта переменная не определена." optimize="false" disable-calc="false">
+				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+					<ml:id xml:space="preserve">ρ</ml:id>
+					<ml:eval placeholderMultiplicationStyle="default">
+						<ml:apply>
+							<ml:sqrt/>
+							<ml:apply>
+								<ml:div/>
+								<ml:id xml:space="preserve">L1</ml:id>
+								<ml:id xml:space="preserve">C1</ml:id>
+							</ml:apply>
+						</ml:apply>
+					</ml:eval>
+				</ml:define>
+			</math>
+			<rendering item-idref="24"/>
+		</region>
+		<region region-id="72" left="138" top="1130.25" width="57.75" height="27.75" align-x="151.5" align-y="1146" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+			<math error="Эта переменная не определена." optimize="false" disable-calc="false">
+				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+					<ml:id xml:space="preserve">Q</ml:id>
+					<ml:eval placeholderMultiplicationStyle="default">
+						<ml:apply>
+							<ml:div/>
+							<ml:id xml:space="preserve">R2</ml:id>
+							<ml:id xml:space="preserve">ρ</ml:id>
+						</ml:apply>
+					</ml:eval>
+				</ml:define>
+			</math>
+			<rendering item-idref="25"/>
+		</region>
+		<region region-id="73" left="144" top="1172.25" width="60" height="27.75" align-x="163.5" align-y="1188" show-border="false" show-highlight="false" is-protected="true" z-order="0" background-color="inherit" tag="">
+			<math error="Эта переменная не определена." optimize="false" disable-calc="false">
+				<ml:define xmlns:ml="http://schemas.mathsoft.com/math30">
+					<ml:id xml:space="preserve">Δf</ml:id>
+					<ml:eval placeholderMultiplicationStyle="default">
+						<ml:apply>
+							<ml:div/>
+							<ml:id xml:space="preserve">f</ml:id>
+							<ml:id xml:space="preserve">Q</ml:id>
+						</ml:apply>
+					</ml:eval>
+				</ml:define>
+			</math>
+			<rendering item-idref="26"/>
+		</region>
+	</regions>
+	<binaryContent>
+		<item item-id="1" content-encoding="gzip">H4sIAAAAAAAA/4yQwW7CMAyG7aZbS9etu3AhSOUZeIIdENph2iT2ACiUAkVUTF2ROPLm3W8n
+u+w0R3b+Ot/vRsmJiJGfyEy1QS228/W+c1+H9e7cta5PSGKMHGl74XqnLZog07b62Bzrqvet
+ld8omqGYMF+8hWr5yty1+V7q6FjZKfKNA+tjwCKe/r/7OzzpO1fV84XRIxvAkp+JLQ+imG0E
+U8kRWwNryYZtPEgnBkMDxB2Y2wuO7oURV6IMRCqMwCOZI/YMjNofwKg9B6P2R/0XxJMyEIUw
+AvvrFu+Xtu6ayp38g6R67VfklhosE14uC6/5J3IpPwAAAP//AwARvY6sxgEAAA==</item>
+		<item item-id="2">iVBORw0KGgoAAAANSUhEUgAAACgAAAARCAYAAACvi+4IAAAAAXNSR0IArs4c6QAAAARnQU1B
+AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADUSURBVEhL7ZSJDcMgDEWZywN5Hk/D
+MgzjcpgzkIaCqkTKk5AixPHyMSi+Oa/gKg8RNMSgFKtDQ9Z+wH4MgewBTEY6Hckl9BcJGiZQ
+jIWRIawn78JKoCzsRdOmmjEKe1E8F/wLGhliCvY7ywafoeDX9OQo1n7I7kl5gTpN59sRzPXX
+1MaQdl7RTu3dcYZxMUEnmNK0dAUvJ7iJcFnCZZwSvM6vCUZckvJazNSgx9XZvPEclVRzi4FE
+UAq+l8LQb+GShGOVPdoFksvhHbwnr+AqNxdk/gCPmb9bUOvOgAAAAABJRU5ErkJggg==</item>
+		<item item-id="3">iVBORw0KGgoAAAANSUhEUgAAAEQAAAAZCAYAAACIA4ibAAAAAXNSR0IArs4c6QAAAARnQU1B
+AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAE3SURBVFhH7ZaNDYQgDIWZi4GYh2lY
+xmF6BfmRClrQmLuzX2JCjAX7eLQoECpEEIIIQhBBCK8XZLEalFL4aLDL2wVZLBivQhiiMMaJ
+QzLOgEZxRJDAAta6MBJB8NjoUEPUvzoEd1uvCe4erBE9Qg3RVhxScGBEkA20qDrDs9YstN9n
+8hkm7xuk1lgxEE8p/1RyrhziRfEq3U6j36+gTVMiITGDb9rkn68E4cdzeUaQLdGaaVwSXIsh
+NcCWnUMG4znwBYnWvLZg6fcemuDZhtDvR+M5TDhkrq3h7Gjv9bu0hk9ou96MICPxHB4/MiGp
+eNa7CXXc+KWCzDok4Z0Si99P15C7qJIgXQIvRker7wQZjOeQBfFiHO70haIaEunNHec9vUd4
+IVtzcOOZVA4RRJAdIghBBKkA+AB5bh4vzTABoQAAAABJRU5ErkJggg==</item>
+		<item item-id="4">iVBORw0KGgoAAAANSUhEUgAAAC4AAAARCAYAAACilZ5PAAAAAXNSR0IArs4c6QAAAARnQU1B
+AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADXSURBVEhL7ZTbDcMgDEWZi4E8j6dh
+GYZx7UKJAxjSNkqElCPlg5d9ubFxtCiP8KtZXXgk9I6cqz4IaVkR0Xfnz6SfIxAUbaAdT+LL
+/sCLvEmffwc0LnQWVo6IQBjzgLGF57HXu5l7HN/c/ugxhaeb+90thanwiOSrP/UtZo4cW8Q3
+wlMN2eVw3PEqnv4m58c5xH2rxqW+PfJMy3HhvzPLEWDQnAHa+hbud1zijl6V3BD1+dsd52pQ
+Nb53pzidn8TSpGU8cO3f5uzl6Mwpx9fiEX41iwonegG2SDXR0q27YQAAAABJRU5ErkJg
+gg==</item>
+		<item item-id="5">iVBORw0KGgoAAAANSUhEUgAAAC4AAAARCAYAAACilZ5PAAAAAXNSR0IArs4c6QAAAARnQU1B
+AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAD8SURBVEhL7VTRDYUgDGQuBuo8TMMy
+DNPXYuUVLdVnfCYkXsIHYnvHcRBwUrzCn8bswgumGDCEzYC8LFfofyKmIp9vhceREZo20I4v
+RU1rpkX6aZ2XBK1RBiqOiSruhceh1xhj4TKPlrUlYaRd6/O4HR3H1+1Vz1B4SdE4LgE3HTle
+CbUBF2FxSG8WvxO+ZIiGx0wxMk+iw6afHmd2NeRg90cZ53wPM0yFf8h3D58jg3M5+XJYO+ai
+cym47rjPwX29V6UeSZ9Vzn2bU97gMC6/45BDIiTCe3ea0/Ik8iWNO/eci0vrB6aaqE+gxdF0
+0JDGyvG58Ap/GpMKR/wApbMm7hEFBqkAAAAASUVORK5CYII=</item>
+		<item item-id="6">iVBORw0KGgoAAAANSUhEUgAAADQAAAARCAYAAACSGY9uAAAAAXNSR0IArs4c6QAAAARnQU1B
+AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEMSURBVEhL7ZXtDcQgCIadi4GYx2lc
+psNwflCKSNs05yWNuTfpD19b8AHOC7SY/kBv16pAG0UIFIJ5MLVt1haB94DixuYPVPOY3Nkk
+8HIbX3WoQUmchPXwss4fIkdyE06SFK2Lnwh3kAqA2fH9cyBeQ1cOVoZ1/UkaClaKe1T2OKfj
+nwK1Snmjld+LKpkVj4A+z1NZILtO2Art+QPQ2e+nqbS47d93yMTTzw2tB6TzaSDr+x0qrYSY
+HV81oczxfM0Hyto/8lU6dQc0r0O1wLI2hTf+xaXQxkvHFXWB5msAqmdRt5lMz+gzUF9N6Uw5
+ePWAEMuY8TtXMN9eCpLT5OG4D/6H1tAf6O1aDIjoA8othL6GRovAAAAAAElFTkSuQmCC</item>
+		<item item-id="7">iVBORw0KGgoAAAANSUhEUgAAAD4AAAAZCAYAAABpaJ3KAAAAAXNSR0IArs4c6QAAAARnQU1B
+AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF4SURBVFhH7VZRsoMgDORcHIjzcBou
+42HSbEhtiOKzU/s+GneGGQEJLLuJJgqKm3g03MRjYKGaE6XETUcCoFEB4dKkF4Z4K4lyXbQX
+hfhSKadChcmLzVn1EMSXmplsoSYuV8vLzI8DxK3NYfsYVm9lLWqAOECffxywd6YuOj5pK3Hz
+fbPN3JIFrDKZugCag9I4L3V0Dz133RtSyLD2SVQB1TUulhjFO/k1jr64IaiBv0V8qWU88ARC
+GkSGgxhltZLPjjknrn1bFIBWK9WvKf5S2++7h43iQy57PiOmxPuNbu2C+UOrX+EIjfEXeU/c
+9/1Pi8WG+DMPRgsBPF/72Lkcd/FsO3UrUP+9HEfff7ZOE5c4sEyuPGLQ2OI68N3i9kLDTwce
+Ji66njjDL0LfKzcL2vGp4lj/ZlW/Isc5ihSavYX/ojiTOL7YHeJyZlPVvWsNlPiozrohblDG
+xiJ3SPyT4rbud8IVs3d1/01hdjCKx8JNPBqCEid6ABvSskRoQHqgAAAAAElFTkSuQmCC</item>
+		<item item-id="8">iVBORw0KGgoAAAANSUhEUgAAAEgAAAAZCAYAAACSP2gVAAAAAXNSR0IArs4c6QAAAARnQU1B
+AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFfSURBVFhH7ZaBjcMgDEWZi4GYh2lY
+JsP4bONw4NBAIa10Jz8pUmlRIK/fJg6MW0zQABM0wAQNMEFdDojegXN4yTdGIUEgMSHxyAQp
+UnDg4yEjE9RyRPAuQEBJXF6YIhNUcUSPUgIkri4pNf7lX1M1XH1JnzkhQXV5UblZgmpSaKRx
+ouSzwVBZecghouR1BLG1OoJotU5irtM2mk8zu0Z3Hjda2v/5oG9CKZLnp1s3grjmsIuXJWXy
+uYci74OCZtfoz6sSICfS7k5/BfENO9b/UoKaHpKb8+5Wi6D8j4yNDzcvEd/Z2KogPdYvfSsU
+QVxePqL3e2Y3jzOnj1fNjiB9TD8miBd7VNA6lzVepPKrgrh+ez0INxeqL+cFfT9B/Axl/HAP
+Ii6nGJ0KKlXzgtZZFqRPsYmKGNEIIrKk81JNW4792xTsNumZNYhX82T95fcgxUWQ0WKCBpig
+ASboFoAfoIylD27yIQMAAAAASUVORK5CYII=</item>
+		<item item-id="9">iVBORw0KGgoAAAANSUhEUgAAAEgAAAAZCAYAAACSP2gVAAAAAXNSR0IArs4c6QAAAARnQU1B
+AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGHSURBVFhH7ZbRDYQgDECZi4GYh2lc
+xmF6balIEQU8ch+XvoTk9IiFR1t1YDxigjqYoA4mqIMJarJD9A6cwyF3jMwGgcSEja9MUMUW
+HPi4y5UJ0uwRvAsQUBKXF2aRCSrYo0cpATauLik1/uevKRpuPaTPHJCgsryo3CyDSragpHFG
+yW+DobLykJKIMq8hiK2VKYhWk9QyVY+HrGYuRuoZukzwJjbaL9ZIWST7p0crQVxz2MVzSJlM
+E/cYckCe5yNuZy0zMfJBKkFFBsgbqdI3zSmIH9iwnjOoYFHwRwZiXDJI9ZCUjZe1T5IFpRMZ
+3DQt/u50eWPfL+wxhlALqq/rj743ZEFTZYMn1Q88/nptMhCjJah+TS8TxMGGBGGdj4p8TRXj
+Jit/KohOrNn5cXFBBR3tPe8zaDRGLYj3kK8X9yCCy0z1IX2StKAzvha3ipkYF0G03vIttiDT
+lSAiSTrGKUvfp3HznXFTDiMMxyA442VeGUziv/4OqrgIMjQmqIMJ6mCCHgH4AGOplkGYlPlh
+AAAAAElFTkSuQmCC</item>
+		<item item-id="10">iVBORw0KGgoAAAANSUhEUgAAAEoAAAAZCAYAAACWyrgoAAAAAXNSR0IArs4c6QAAAARnQU1B
+AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFlSURBVFhH7ZaNrYQgEISpi4Ko45VA
+NTRDMbwFEUFZdtE7kwv7JeQ0pww7Dj8qCCzEKCZiFBMxiokYheCtDkopaDpYL0b18TaY6E66
+BMOME6NInAkaTBOjhvhgrUtXYhQGTD+d1ii1WqIgHXor/NJgDcJIa5S2kigaF4wYxaBdzNtY
+DpL4Gcr8384ofeBL7lNDGbjD2bfwBpZGn+MMBS33WyVqM+vrJiUD8uBTMX0TvDWsAktRzcB5
+GjO8bxRE+SgK0zzSFGNPcUkUS2OOe0blWN8RPxflzMCMrEOZde5zSoPJw0Rt75T5XDeko1hE
+PWi6iJiuuTVqXoPm9al3pwhnslFIkn/AqPlEwair/zia8ZnJXe/1NQoEnwpcOe1IcJgbfmsY
+A5WGi1GzGgyyUVgykC/5YDFP5PebM07dZ0zEPgZKBHu2p/GAKlHCiGKU+ms9o+5XI1UfTaiN
+oO5XpBg187seIfwD/LlD9wVPqJ0AAAAASUVORK5CYII=</item>
+		<item item-id="11">iVBORw0KGgoAAAANSUhEUgAAAIYAAAAlCAYAAACH8ZHRAAAAAXNSR0IArs4c6QAAAARnQU1B
+AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMqSURBVHhe7ZqNkYQgDIWty4Kox2ps
+xmK8BBKMGJD13FmRfDPOLP6AZx4vwXNYDUPBhGGomDAMFROGodKRMJZ1God1GJLNzXQ8sEwj
+HRvXaaGdO2r6kefk+nk2nTlGCFiM4ex88GJ7mVZHUfQCSUSzUe5nmVwUw+xAHOMEV7RF38Kg
+9qhNaQi2ut/zQT8gtnFwa05iT6VrYYS0oVk9nDeVQlnbD4DCMMd4OiGgel3AzKuj42eOUe6H
+KDrPc+nXMbAuKMzk4AKUAnw6OKaO835AZA26BdJ1KsHCMD+b0TlytUFdP7Nrr7ZgOi8+Q9rY
+2gJ0AvUAct4POk5si9VOK3QkjBBMrgviDEcB+H0QSMfvMEp1w3k/ozjO+xrTBQtj/8fGLftw
+jGci45iIkeqkWpEKx0jskWaAaaMd8i/WMNWRICrfq+SFQe0Wl1oGIAWwq5fSOOtkhaG9tAn7
+yKq8GkPRtZ2XtPGG4LyZrkORcR9ZwR2WhsYl8DmSY/hnLh5oeTUWOAgjBv4QGQz6ZkHLPPtB
+QyCFgGKbRUI3QQHffp/ZWXI/cutCNf/8+2FScvBRGFIIl4Thx6SZnl7q8xbc2K7TrDD4Nwkg
+9/tmDg+xge1+YFKK+N0nDCB/MTuBDPI3hGGOcfXvP7xYu7PGYAHI9rRTHYshOQ9v4oeO0Tvo
+DpsG+MUaxkjERMkGKSSMvTqjU/gg4z7slJ2CNiE5TjF+G8G2/O/tRY+bt/7xMi5AVeV70UhB
+GrXs4uA3nrwAPdfdvgLfSHDGCzBhGCovFEamaEtyU0xnldZ6Ts248py7xv0OL3WMEIAYE6qV
+YjsWZSSQ2wqa8rgtfQvahzCorS6/IXhna3p/vasJ4gfj+mLwuSuzLoQR0oZm3XBe8dtO5pow
+8uMClcvGX/FqYeh5ntmW33c7Rnlcosqpfsf7HQPzfGFmhlmtWXoSZLll+6sdF0T5YLdAukgl
+5f8NoHOc5Xro70IqyY3bwregnRSfIW1sbQHObPWA5JowtHHRoWJbrI6exguFEYLDth9nLArA
+76v9tlNSI4zzcVv6FvSljmH8FxOGoWLCMFRMGIbCuv4BebjAfGk6xQkAAAAASUVORK5C
+YII=</item>
+		<item item-id="12">iVBORw0KGgoAAAANSUhEUgAAAMgAAAAlCAYAAAAHgqbCAAAAAXNSR0IArs4c6QAAAARnQU1B
+AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPJSURBVHhe7ZqJkawwDESJi4CI44dA
+NE5mguFbtmzkE3PsDOB+VdTiWQ7NqNuHYFgAAEVgEAAqwCAAVIBBAKjQj0E+8zIOwzIk27Qo
+PgSAmM5GkM8yj8MyCUd85mmZP9wAr+czj9wxjk15794goCP0LGJiVxijNAiha4Ng9OgYNS1j
+Q/K7NMi6/mgbZsHb0DqY26YRGEFgkL4QxRqMIAlYg7yPeFYgtkqizRpknPXZdWAQ6lHgmA5R
+ywSDCIrPQTCidMneRbqahGiEYlrLYeA3rHX9eE6te0iXT/8wVH5mt1Jqa3knrch/rTFcW/TI
+xuA7uv33kr9Vq6aDEYS+uPyR/QUbLwa+DQmehWKEs4omW4BQio1iUVP+LYJq3lmg/l+6vffZ
+Qgv5GOLv+/dvQVQNQlz5pcHFBCIR4jH7tqcsTyP0emwqz8FLeVfzrM8rjDyN05ZWkhj09df2
+dwou5w0S9yjgi3AFh378nDg5N1nRip4/Rzbv+h72Vrl861iKzxbIsFFvT7FtLJLjGOJ2Tq9X
+c+EIwsninivYms7vnaO/H48WxWMy4tRsPQNK874aIDVIy4gl4mgwB5EziLz+wwxyjEQMHWxX
+YoXO5iqILl1r6OMr0ysiybvSUys+ITWIxZxTXRewkRrMQbzMIBhBznHg9wt6Ynt+eih9HotW
+C3UjJ3HeSRtxXKk486PVyjmD6CBEu/R9r+XnIwg4gVljOEFa8SWpyq1NeC1Ro5b30ggSCjhG
+mOfgFMteQ1SxGo12Bm+QoIdwQdEXjj+LMUn6eyeDPEZEnCNvhI28JVOuOIeb56/HyvsXNSLN
+4dgSeCkGjvVbL5peOyEG4GV4gwz/Qq/sbQPwRozKSexS8Hvb5ygsTovD9V1ojxvruOfiDXLm
+73miigTPP++vqe24/RwdBnkkgxQ57e9tX0NcsrPttIz4LfT9N54TWNrixgjyXAKDEHvb1xAK
+zfa6YZUiqJaY6gfX1JP3j7hNvbk+TvF5JFp3jW3jHTNILm4CBnkuf6H2A1iheQMkYgrLhB+l
+rHhNyU8I0redWdgMXBpc96OSY8I+g5TjtsAgz+VWBjEa4p4/Fqd7ThP0/kWDuH3xYCq3HxCJ
+XW7Fev123AQM8lzuZxBN7om+xY0MUuxXGUSi4zkwxSrFDYM8l1saxBlBtmchPDU5U0THmSrS
+7wySxm2BQZ7LDQxiReamM74H5pKpFfy6pjCbEFvwisw4avHTvv7L15zUen06zYiVjqkKtsUg
+LXHL9tY9wR25yQgCwD2BQQCoAIMAUAEGAaDIsvwH89riWt1njP4AAAAASUVORK5CYII=</item>
+		<item item-id="13">iVBORw0KGgoAAAANSUhEUgAAAJsAAAAlCAYAAABVoZuJAAAAAXNSR0IArs4c6QAAAARnQU1B
+AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANwSURBVHhe7ZsNcoQgDIU9lwfiPJ7G
+y+xhbAgQQyDCtittJW+GGfEHXPh8iey4HCbTIBlspmEy2EzDZLCZhslgO17Hti7Hsoji9nj8
+1Gtbq/uDetrh56zH9oq7J5HBhgoQEBe7QyA4JwhaAY/UdTuvzRFgu4O21g2umEcGG0pAEuur
+sJ5rZ/Pqawf12o51ccdVa0+TwYbKIQkuVoa5d2HT2kF52MzZZlSAJORSeqjsha3VDgpCbNXx
+HiyDDcUcyedZiuMUsGEoLMNmqx04eLjJXM3LYEPl4c8n7zXXeTeMau3sbq5cLclgQ+WQoPNk
+jhX0Lmy1dnwbVAdndBOFUoMtApLyLHKiuGxBCT7VtVys3c7Kjqd9E7GWYMsHisrlU/xZtV3D
+9BPh+MZ51Yb5PIc/BMGdiYnsen6snRowZxMhID6RI+affqTBdo/4Mou2vsdCevbg73t2Ls83
++SJ1j3TYYn3U67k5233yY8vnUXtxIYHR1I8DEy69RZ+u1suICltwmzynIAfyBZ+U1GE6T9S9
+O8J5e7zO31RqQ95gE7ZimcHUKzm217ABB5syyLUXmjgvPcAVsBFMxax6kJiFgr1i89gZg5Lq
+gnx+U7idW3kTNpK4T16mIPEbvx9TonO8ddiu3UoPmzkbmurOFh1JtutvsrgRFba0HW9C247q
+h+17yibln5RPKs1dKGy+KgrRR8IDfFAILdWzdqiG0Tb9HJyRsJmz/ej3eyNpnldzKtinXufv
+SZ5fSoUtQcXrG4NvdwkwcR5a9t9zNhNIhFNVNSBhnzo9cKxuTLkibPnTQhfizfl9Hp7kaLGw
+njOLXuHNB7fPRUy3n+37y4JNQz21Qf2wfVIIKIff1K00vjI1YmNKc6LMQREme+ZM6LOJgcl0
+IYPNNEwTwaYk1pUQ8Nn8sadffg572XqYJnO2MKk0zzHv4PNe5JMf0XW/s3ybMDdssS7fpPqd
+Da6/WHs61dcvqvKm/hRNDVtwsTJs3Q2b1i/Kw2bO9gSFSQ+5kR4q74Kt1S8KQmzPmtV/1LzO
+5vMmxUGuYRPg8KI6Ul+/cPDR3yZMHUa1v+TuDqNav0//NmHyFwT5l1zQ3bDV+vV9Uh3ytid+
+mzARbGHCU8gjZ4nLEJSwUx1KE7ge2Nr9zvJtwmTOZvpNGWymYTLYTMNksJkG6Ti+AHOmdnYu
+RYZ6AAAAAElFTkSuQmCC</item>
+		<item item-id="14">iVBORw0KGgoAAAANSUhEUgAAAKkAAAAlCAYAAAA5p8mMAAAAAXNSR0IArs4c6QAAAARnQU1B
+AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOUSURBVHhe7ZsLsqsgDIa7LhfEelyN
+m+livAkJCBhAWzwTevPNOHMEK0p+8qCnr90wlGMiNdRjIjXUYyI11KNApO99XV7761UcbuN+
+4r0u3Lfs65sbjf8CJZ6UhBp1uTkvyHj+XnfHyvRiLQRszMVdh6NTpHy+SG8AAhbbjTn4wOGo
+FCmtNGmVwXWredGf4aLDUSXSWj5KbLvjfvOkv8B1h6PPk2I+uqzQIkNe1oFkjWmBkL/ccDgq
+w/3mWg+PHtVEqosiEqZHI+f0DqfhkAJKCycK7XLUB0/beHFjJsDOc4g0X4XRg/I2FBZQzoUt
+i/bKNCbjbuGEIVYSwtVtAuNYbGG6KH+mttwYRxEo59dpPx2pCVo2QTuONJc4Vswp73+xks7J
+VV1lnrTMBeMNR771T8KiyuYJ29iI3qiHQd+raxt32zLhbu4QctMmLJ5R5pLHKt/r+fqgKVJE
+XElGAnnQU9jKDJgY1v8NhofjSqjz93d53lazybaucO3DnjSrCcpa4hlMpN/CYnQwd7nX4fCP
+51LuxV6vK1S4LnxDExBtAmPQUDXR4OIovB4+Q6dwKccqzyXNjMZEmnHklaejMgc0P2B87Gbh
+HZey16zOnyCcAik1ONsEnps3xusiRZLxLggUkUSaakSnSE+GgJsEQ050jKJlNBIYC78iiDTf
+PAOfLUI9crLJBmGeL2qLFOGFc0GgyJwi/Wk+9aRHX5zDzFPRfc+3wPaWSEFQwrjSmOXz1oXz
+nUhhsOS89l5jMZF+i48saVEkVb4kjNM09vYJOc8sadkEbVg3Fz7Hd+Ge7pG840Wxf0MUabYa
+w0PhqinbjDPJPKXT5A3M7VGMtTn1os4/L6YCHZvURZoINNATWedZ/+of0MclZ4bxECZSQz2D
+RFopOLK4k14zKkxcGRejUwi7fxOejLEM9KRFpcf5TDhP9/t8/jss4W6Pi/mT/T5qbp4TKZ+L
+1atPvFtbLwh8XtgjPHNjXBBws5o2VPKYSCnEVsJrr6r0fCbS+rhwnf0+akqGi7SWF2Zc8mj3
+RNoel/Ypsd886Xw840kxL6x6ShBMta8QXHp0PtMfF670XraXZhjaeCzcS99eIe3vqlPgfh+E
++9q4hLChbajnwcKJQuxxTp4snidVt8xnIpXGjaCnFTsMzQwSKQklhOboyVAUvm2BQunoD23t
+9PCKSPvj2u+j5megJzWMZzCRGuoxkRrqMZEaytn3f+aW6LSaTGmYAAAAAElFTkSuQmCC</item>
+		<item item-id="15">iVBORw0KGgoAAAANSUhEUgAAAKkAAAAlCAYAAAA5p8mMAAAAAXNSR0IArs4c6QAAAARnQU1B
+AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAN3SURBVHhe7ZvZsYMwDEVTFwVRD9XQ
+TIrhSd4iG9mYxLwRyT0zfECM12stzvDYADAORArMA5EC80CkwDwGRPrclumxPR7FNa/hd0aW
+mbblGR6Dn8CIJfUiTLpcZyfIeP9c5iTMdSahTgu9Ae7Kc5lOGRybIg33kzaC57JNj3mTdhbc
+CFq/OayrE2vmMXVMitTvtMouY5HCkn4H5DFVQ1RgSqR6PFrQOTBgHVrzpc8f2rOkHI9WLeW6
+zbCi98eFbN4g3c6SRgPKyZHW+XVGLGqTwhPKq+EVXVjXYXSMJk5kMWmAcnw8oHQvgm9wZ/o8
+owGR5rswWdBwDMUJ1LTbpTgr/QrOJk7u/DGKQJiw3mOCX2c/T94byM1VeoaeeeV1eRWTGzrf
+qK4+pZ1PUfuZYsrzxkL2s1dXmSUtY8FU4chRfyHqPK1rFj/LeLp7XoMYYrHqnxryWM69MyZ2
+1/vJmy+Ic2BbLZoiZVxHIdJD2vNEFnDOY6+eeV2Xhd6rWEYhEK5Lrpu2ju+y6yeHYem+zCWu
+ASIdRHOeSFBlonc4ryQG/pnXRC0mrGdZly5StoCF1RN11Cjr7mtrLBBpRp7EZdfBHLTmSbrp
+SHteqR/hoLsqUpl0uCTzJcC6cIRQOwTKaCKVddsUqXMz+cSpi2r8Gk1ddHtXzzRFupKbDy/o
+It0f3XC51/haCU1I6DoEytxTpF/NFZaURKE8b81rLjh/5cJoJCtZzKjxmUjz+hGT3orqPIXY
+sqR3XnlNZDF+L92XsW7h9vd87u59HSK77xT7JySRZrs3dsoNungG9jTmSbV6WnkljGKkSPcW
+Nogl1tcUjBBo5EhktXGFvv7XnyrjgzMABgORAvMMEmkl4ch8lywzyk30tMveieKqoe2C/2Sg
+JS0yvRDPxPvrvlNqt8vx09nPFYAtrhNpuFfP0Fzg3cpCGXpfOV/cc6JdErD6HJjmMpF6F1tx
+r0dZpeM9kdbbpXKdnysAWwwXaS0uzOiyaOdE2m43HGDTBUt6P66xpBwXVi0lCab6WyE4eR28
+c9wulXRW9ijMANa4zN1zcqRZrf7vlKi+N9x9rV2PcqANzHNh4uRd7OveW7J0L7JunfdEqrWb
+YEur/gAsM0ikXijRNSdLxqJwz975TqlHpMftznM8I6ULAr0lAy0pANcAkQLzQKTAPBApMM62
+/QHiTvuIwFLYagAAAABJRU5ErkJggg==</item>
+		<item item-id="16">iVBORw0KGgoAAAANSUhEUgAAAHgAAAARCAYAAAAWn2hAAAAAAXNSR0IArs4c6QAAAARnQU1B
+AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH4SURBVGhD7VeJjcQgDExdKYh6qIZm
+Ugxrg0kMNs+yOZ2EmBPShsBkmAGjO/zG0tgBL44d8OLYAS8OCth5cxz+oHbaK3bz/tP6C/7s
+mcad/h72IpxJ/NCMo17vL3tmzzm4Ln1+QptnHpJ3zKswj/Q+viN4Jgaeyr7YekthJzgKkhOA
+lDova26hIYgQ+vtAbr7Y24Tmagr9zggDxni+h8Y75hUGRuFf1p9sI/D5N5yjoCOcScHXMRAw
+9FuFJgjqf2AGZcAIeUJKlPrj8/c8c2jy1rzK+lnY4TdsCmil/gewPtM/YL8FXDvBQbjGNYY3
+Ao6nSpbGfwtY9SpqDvOg4ogwyUc1ZHhnquE/mA9YEyRAC6DdmLWGyb8E3ONv88zpRTR5m17R
+aa3y43t5+tUSrmAyYPjoH92/iKGARZVg+vH+rejrb5Q51HnbXsWgaGNVxsm7FsYPlGcEC1g3
+NggshI9c7hEknJ+E1Bomv1Gi9bX0eOb0Imq8Ta+y0p3rf4D9JYfMpIYs4CCyKAdoFOfCMffz
+4D3wLd4IOJgAwZRT+jxz0Hi7XoUqlPzW9YIZcqNC3+gSsoARaC7fuZy8fFf9/06Uz3Fk30gE
+WHLLvgz5ybs13/NIZ5dnEgpv1avCm7AxaIzUDU3ROV5BlYA31sIOeHHsgBfHDnhpeP8BXGpX
+icXHefwAAAAASUVORK5CYII=</item>
+		<item item-id="17">iVBORw0KGgoAAAANSUhEUgAAAKwAAAAnCAYAAACSRqPDAAAAAXNSR0IArs4c6QAAAARnQU1B
+AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAM9SURBVHhe7ZtBkoMgEEU9lweycpgs
+PMssPEe2qaxyg9zAoaFVQNCOimL8r4qaxCHK2M8W2kzRAnAiICw4FRAWnAoIC07FJYR91WVb
+VA2/A2fm54XVshYFhM2UPj5F2dYv3jgBMiw4jlfdVmypNEYQFuRBU7WlIMVCWJABr7auZfGB
+sOBY1LSg1HPYAhm2A8Lmj45RWatcOw2EBZnQtBWEVajJvCmboLSVNcsWXcpyBDdDrLhwi4Un
+djcJbdfbeH8SWaQEx9DPVYd6q318qW+WsGqlVvLO9M5lhVywA02jlB1oqsp539ELEBPT2U4X
+wfbxlh0rPH4Jg7CQ9CSoxFLF53rB7KYYbXfEsYTagNGxaFrWv6fEGL9DzGGE1YPn1By4Qkdw
+/6UHBStQ5757OhRCLCyLo7dF548kspcNKfYziyP/WP77plo+BVmZYfmPtmXvWuCkAWLdOXvV
+1WSM5MISPDeePK4lrUBWIiSsLeiBwi4jGKwfbNszPR0gvhHWyM8X0KSILLZAViJjYZFhv2fN
+OVPizPQRC+tkSzOm+K7XCbv9HJbYMcOChajAzwX6K2GdRVdMovVTArMPdku4jxgsLF9B3OZO
+ivljsejam1E5y48DZbIujnZwItu1WLw9fIu2ZO2YEy42Bh6r9HuvMVJMtABIxuWE7a/+xA2k
+4ZLCgvMCYcGpODB6dnlnv/qvwS0tSReP9iJFLyi8VXtshQ624zBh7Sc2VEiW1vjWMAhLfFcP
+1GO0V8y8Gu4+38sMYZOSx/1Rlzy88kkCFgurxxe4CyDD7k4+wkYy7OfzMZkr0t7vN/ech/oP
+yIU12XP+goKw6clDWJWpYs+W7/d7+3g8tLj0mnDFk7NUWOmUBcKmJwNhG/d/efiJSBf3LoOS
+tFFhvc/Q7/0+Y8knhPX2p0WEsFlwuLCxb8/7/P39OcI+n0/9OsYqYX30Aiswh1Vi299NhbDp
+OVRYCnAfXy/4PiQcSUvcbjfd5rAlFQnrLaJsRlUC/86ggLDpOUxYI4Ddpmux1KebHlB2HQs4
+xu7j9jeymuPabTrbu2P2+nKZSzdIm4zDhN0LEsj+Cc7NJYSFrL/DJSIJYX8HCAtORNv+A31l
+LOdc9pM6AAAAAElFTkSuQmCC</item>
+		<item item-id="18">iVBORw0KGgoAAAANSUhEUgAAAG8AAAAnCAYAAAABzhZhAAAAAXNSR0IArs4c6QAAAARnQU1B
+AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJbSURBVHhe7ZjNzYMwDECZi4FQh+gI
+PbBFN+DWHXqtOHWDbpAvdhJwQkLDTwF/+EmRwEBBfrUTKJTAFpHHGJHHmEPJK4pitXEGDidP
+yEfkMYaJvFbVZd8Sq8aGTw6jyjMCRVyPyGPMYeSNiwNEXojIY4zIY4zIYwxveU11aplM5Blx
+cI4/KnXmQmRUeXtA/zSlqlsbTsZ92rocOaf/Ddo98JrMdiLyRmjrqkt6U+lEl7VOeTru0daq
+sicNhTSqAqmBpE62yFsZLaOMtelUnKLn5rIrPVNx/b7P7Mr7fD7qcrmo2+2GyYT9KPjA6678
+WMhLVFg03qFl1SRRVnYFFRupstny4Mcejwdu3+93FDkO7f3BmGgWrvktC5/Vqx5CKo7Y9qiH
+O8fI0ZUKt4wUwSJ5r9cLt5/PJ+5vRXgvTOrMsT5aQrS6UnEfM5eZ1grbVDbMmXR/kTxHnrx1
+Kg/O/z3zn7WBSrHblFR8CFRgL4/eb1V57/cbt/Pa5jrAfY8KJLPLpW5zdAUZi0fRrbUTgq3S
+vTqAVP81YpE8GLBguV6vmy1YjioPXwNsTswwiU7FaV5QgjseJgpk2mPeIRLPETiQB+1ya+C+
+wnREHmMG8txqc0u+yRu0IN1eaFeZMk/8Jw7xlx+TZ+YXsqqz84Jz1YkVefuQlOetzAhSecih
+5Zmq+v4uJfJ2JCUPW2buFwyR93twfgpkjVaeyEuyS+XlyjOLk8icF3zREHkb44QlxVkGq034
+pBRUo8jbmFx5gP85KljATPyk9J/YTR7gki7MQ+QxZvfMibz5iDy2KPUHIzV3+oiqTdsAAAAA
+SUVORK5CYII=</item>
+		<item item-id="19">iVBORw0KGgoAAAANSUhEUgAAAKgAAAA5CAYAAACicWBSAAAAAXNSR0IArs4c6QAAAARnQU1B
+AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQ8SURBVHhe7ZvLcawwEEUnLgKiHMSE
+4AVZTAbsnMNsXbNyBs6Ap259RggJBEZC0runSlXDT6LMobsF5jYBUDAQFBQNBAVFA0FB0VQq
+6Gsautt0uzmtH9X2N6+h866XxPRj79NNw0utBlmoOIJKcYxLY88S2W6xnAvhXNb7eQ29kXLs
+RV/dII4AuWhHULXcOSFuPYIScf0wr2Hqbv201hs4l2YEldFymYL3ChrqhyFBEUGzUr2gsjYM
+p/FYQbf6YUT690ZWkIw2IijVjYHIthCU0/QypW/1IzZOPaJndppJ8TSB8UW3vSk+1M/Yo/a8
+goYmSSLCzSKjZK+gvn6oD7MsInCPNJ+NSgWVUum60UQ89YjITHLMcqi23O6ns7brdfAzHxVH
+0JaZ3zimOTcZZ4fGbxoIWixO6aGiuq/U2C5j6gWCZkeI18c8DXAEVcvex1xCXu/6BoCg2Tkm
+qEznvlQu9hvajJ4EBM3OPkFD9adEPnGg7YigF2AuTkXNjyOb3YIP/60ISvXnyksCGV3bfE6L
+CJqdfRFUB87QCwQJRVIICk7hmKA6nfszvYiw3g31A0GzEyOolFOXAb4XCH2vn4GK1qicBAQF
+RQNBQdEULug81a2ltHPfpsSMa++D9/OpqCCCShGMG+4rP4F5J32aoMT6uPhWKQ/1CaqW3Ucu
+8RFUHH9oFu0fl8G3SsmoTtDQK7/UgobGZfCtUjKqEVTWeuE0nkrQrXEZkf5bfdV4NXVFUKoD
+A5FqXVBHNrv9+VXjiG+VElJdij/+7ZFG9HcgxeNbpWuocJLkf+WXWlDfuDSmWca3SkkoXFAp
+iU7HJoKpRz5m0mKWRduUNEbQ7XHxrVIeloLaF1s03/WOj1agBai8CV1udkG5YpdA9nr32D3+
+zASVndo1lUxr3oEh6P8BP+MNCUp+qMzB+1m/9cSR17+d2uvPW1B7ABuOqPP1e+4AUDfjMIiS
+KCDoTL63rOSHHdTcCeYef4yg0mzfjDQQRdcG4BMPpwVQCSI40TUMp3hVq8udjCOuH+cJ6n2e
+J0/i2ADzycasRZ4gOIMj10Ecoz7GW6tBxVYOYLN+OOu+g115EfSPeP+QaFHtNEaR2tUlXxNU
+/tOMugGsAEfHvM/reIno1KCeE/HUpoigtbH/OswFk80OUgy5YaSUYyy6o2jqrDwmqECelB1F
+PeFbkDqCgrIIRtDFJMnZz0n1msOCEnywddcsOuJBA9s0mCQ1xUxQ59ravpgIqx3xzWli/LEI
+FC0qcooGycCVbFTVEBVcy4agAFwLBAVFA0FB0UDQSH5/f6ePj4/p8/OTa3JaBumBoJGQlF9f
+X/z78XiwrCA9EDQSEvT7+5t/P59PXgbpwV85EltICJoP/JUjISF/fn74N1J8PiBoJCQoNZok
+3e93TJIyAUEjITkptYO8QNBIIOg1QNBISFA9iwf5gKCgYKbpH9oiCSDgmE6EAAAAAElFTkSu
+QmCC</item>
+		<item item-id="20">iVBORw0KGgoAAAANSUhEUgAAALcAAAA5CAYAAAB01Lo3AAAAAXNSR0IArs4c6QAAAARnQU1B
+AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAR+SURBVHhe7ZvNcYMwEEZdlwtiUkRK
+yIEu0gG39JBrxqd0kA6IVj+wEpJYbJKR1t+bYcY4sBboaVkIuswAKAVyA7VAbqAWyA3U0qjc
+t3m8XubLJV6u483/fWUa8t87JHH4NsM8+W9B/zScuZ10Q7BtGqyAy7rhNl4zsqbU49zGYQ67
+00C5XEezB9BAP3L79VRkEvyQ3IU4lts4X5G91dCN3C5LX5csGzgqdymOY5oHyK2G5uV2tXC5
+XJDKvRfHYjL3UI0FeqKPzE118lpXRBzK3JU4xDSi3tZEN2UJ3ezlvNzIbetmXnbI41S8Bx3S
+0Q1lvh4+lLkt2zhxjGkeq/FALzQqtxMy1MmLmP4xXngeTVKGbfKC78cZ6PGf/7tbSjeboDca
+ztwAPAbkBmqB3EAtkBuoBXIDtTQjd/zEoq0F9Al6DqgFcgO1QG6gFsgN1AK5gVoakzt+FyQs
+ufdG6nMnUyRx+TaYsKCBBjO3kyx9yWl9q89s4V+YkstN1ONiLmX7rC/KyV5ua19uv56KXH7V
+1Ww/5MSUxbVgLmV7sFlSVnKe7Qo0L7cbrUfmTsrkLsV1YC5l05irruSq3azc7vJTLg/ulXsv
+rgVzKRvG9OMoSzttZ26qiwuXn1juRFy+LPvL4hKYS9kotlx0/dp15g7uiedOLpj9BWUJ5lK2
+gCQpbbElpeCGv4MbyqNzJ2Vy5+LGMTGXsl1M3/UndzySFxH9YzvZ3Mmc3PtxMZeyI+6+oVw6
+3C2VqwM4iVyJZAdw8iUf1Pl+4YM4NzjXv4f915jnDuZc+82XvmY+/lv82GslCyeS2wXgl2q6
+dB/9Zwk4hO9w3l9LR8ZfztdwKbb75Eq12j+iXF+mMY8+O5aQbb/9fS91of1ns8ptfzAzomwm
+P3dUgxV6MjMKMjet8yRD8laTTiSQy9jV7YWXeimbwUIeLeuuPekxn80itxttudFUyd72BP59
+I9ViOpzOnaQsSddFcieZfrmv2HSYka347Jj6P/GCxy7wcPtPIJY722DBqPfbLDURXzYnUiP3
+HP8qlERuGgg8+ezKwTKxi2X2pZ03CcmXK2Ypx2OCC8QmcnLz+P8v99HM/SAbETpYTmMy5Yg/
+pSK5DbTd2pZaqWj6jAkoEavc/wE/CARiE2n7JW04m6TmzpQY9vu9mhuZ++jxx6K6hXd2Tu6F
+qH7dMlGW9p+JNFZeLJadszwmd9xmd74qh3AKUSpyJ5wfoD+gv27Fk0PnPT3FRbmT8iSF9lsd
+8k9DogRFfVp4cFDsZyb+nWVJ9LvCGI+yuc7aRrFsUhXbnrS/H4Ha2chtBU7Of/gulYL1wfZq
+wCRmMUPIqK+LncjEDuzJmWs/4dv6X0/fCkWkz9hmKR4zAI2zc4cEyUG/7MgNQL9AbqAWyA3U
+okrun5+f+eXlZX57e7P3CbQOnhdVcpPQHx8f9vP7+7sVHTwv6uT++vqynz8/P+06eF7UyR2A
+3ECd3N/f3/YzyhKgTm5a6Iby9fUVN5RPjjq5qRwBgIDcQC3q5A5PSwBQJTcAK/P8C/l5mv6a
+S+xyAAAAAElFTkSuQmCC</item>
+		<item item-id="21">iVBORw0KGgoAAAANSUhEUgAAAIwAAAAlCAYAAACQ0wEYAAAAAXNSR0IArs4c6QAAAARnQU1B
+AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAL/SURBVHhe7ZpNssIgDMd7rp7nDeMh
+PIKLnsVFd97BvStv4A14hK9CSVpotZWa3wyjptqG8CcE3mskwxTAgmGKYMEwRbBgmCIqEkwv
+RdPIBprorY3ZmkoE85Bd28ruAW872Tb2PbOaR9eaSZgZ0zoEwyL5DCquwgZVCycjc3+/YLRY
+7FLEy9Hn6IVsM2YkZxhGoZb8Lm8ismB+nSCDc4ZhstE1TNupXDMNC4ax9FIcQzDB+YtqXPN+
+iLVF7/P51AMErzjHPUijt5hwHkQLdzjTCK/Hgh+uUfb1oP77WmXI1KG/uWNICuZ8PusbnU4n
+awk57kGaD2ISQDvAVGAhDi6l65gI9QtF35tXSy9m7CvB/Qffw/Fa/ixUMJBVrtervN/v+uHw
+GnEwkYxJZ6jJLFMpG34TXu8F9n11H4HVCZR9GYn/arkZPpu+ULqfAxVMmFW0WlXzaLEYW6rk
+Efa7S53biyTgdlYKJQKqz+PfoIJR93EnqxGUXWeGUTYAX2aK07EvWb5lkggGsglkFweaZXQA
+SzKMUbUXWdiQ4L+H5c/EA64GDky678gkgFkcDC42KI9OoDGj7IZANBliATD/57NfHolgsJrF
+BdpTLJhlRIM80d7N0oCDffBrHJ81y5GtnzLEAmwmGMgst9vNfhpwOyafeX4ywwyfZwMe1QwO
+Nejocyl7yDrBxP6YuMw+kiASDL4jMsA1CPbr9QKPNskwe5EEPOovDN5E30dLk0fZ0UGi7B54
+3rolKfI58x4UXjCQPZKZiLTL5c+o3bbJzupAV1b06gG3/QsdD+zeHPbPXScGg9o2T2+nA7E4
+5gac8t/6mvt/LxTvLwCYQ8OCYYqoRzBhqlWtqmXuQFQhGF3ERWu52TUs3Royy/l+wehiDSnU
+dMZZV8Ax5Xy9YNLs4uAsswd1CAbdRpoDKBbMtnCGYYqopIZBdkVUbcN8lO8XjML8US/dJcXH
+38wWVCEYwCxNwzkMi2UfqhGMwWYW1Vgv+1CZYBwsnL2oVDDMXrBgmAKk/AerG5wniu512AAA
+AABJRU5ErkJggg==</item>
+		<item item-id="22">iVBORw0KGgoAAAANSUhEUgAAAJAAAAAlCAYAAACtQWB+AAAAAXNSR0IArs4c6QAAAARnQU1B
+AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALvSURBVHhe7ZpLkoMgEIZzLs8zReUQ
+OcIsOEsW7nKH7LPKDXIDhuahKI1SYOJg/q+KSkRHeXw2rZmTAqACCASqgECgCggEqjiIQL0S
+p5M6URG9qwOf4AACPZTsOiUf9FWq7uS+gyIesrM3YuY4ti8QpNkOPZbCDaQRKSOaty2Qkcct
+XVi+tqUXqsu4KxGBAINOC2TezQiBwJQgqiMCgWJMDtRJHYuWgUAgQa/E8QUK3v/oghx6Q2qT
+6OfzaSaFPnnil3e5j35HIbe/vZjLHYov9JYnVV8H284h1xmjtznOXz9zHpMCXS4Xc6Lz+exq
+QuKXd0K4i3+JQMNgr/XXTVR42EMKdslN1dfAt5NEDeevXFZWIIo61+tV3e93c3H6nJDIO3Lv
+yKOQ099eSiUnEWiMMtMlIlVfT9ROvTyN2xQMypd/VqAw6hh7dRkYQp8rwZVXB5S5G1tmtb96
+omh3vIRp3FhEsqTqDSTZLFrQ8SvJ7ryd821qX6m0kUAUbSj6eNgoZDpZE4Gs9YOEYcn6+y0p
+b8tyf8eXcaxABkYIQ6qeCPZlyENwAoXCbCoQl/P4AR2oFqiMyeQWlK1Z7G+vly43PmmBaB8v
+Sqre4pa7DHmIjwlEked2u7mtEf9ENkQmRCDDUn9pUubniyeJrs2Jkqr31AmkGxds2/6XDvtE
+IP6Jy0L7aBBerxe1aJcI9N/I7W8yAqXetSy+g6lfwuw53PxlniPFIBBFl/kdw5Xf3x9rvytD
+u8hqX58aVCNeue3/Cq6/if5NBEqNU874hfJ41gRInde1Nff/flJsnxiArwICgSraFSgMzbpw
+Uf/bcrI9aFIgI8YkF7BPJWHiaY+Zrftgc9oTyCR/TOJnItK0HhHo/TQnUBx9PIkoBIHeSpsC
+sY+t9oUYBPosiECgikZzIOapi8mNIND7aU8gjf2dKX4Km8sCgd5PkwIRdikb3wNFomT9NABq
+aVYgi4s8usCRfWhcIA9E2ouDCAT2AgKBCpT6A0OuvQDJUYyOAAAAAElFTkSuQmCC</item>
+		<item item-id="23">iVBORw0KGgoAAAANSUhEUgAAAHwAAAAnCAYAAADNVyyKAAAAAXNSR0IArs4c6QAAAARnQU1B
+AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAImSURBVHhe7ZnBlYIwEIZpwD6sgS62
+iTzb8O6BWjxw2gb2tF59nOjADrKZJMAkiAHUBZn/e2+eAbOrzJcJiWQaiALChQHhwoBwYYgT
+XhW5zlTpj+QhSriVnWUQLglUuDAgXBgQLgwIFwaECwPCJVEqty0TvDWLhJdaCU/I1mHCK13k
+uS4qahY6z3wbbIpOOCSLwAm3sv1UPmY69/0x638eT1Y43QbYQOGB0TCRebnk/cawyJTOv6TE
+eCVT/y8qfDVsuMLB65gpnO2/TSSLE4u21TBTOPhUIDwBT9ASsTQihUsGwoWx4NXzbcj/7f8d
+3/pnZ9p0bOL36E9H1F87rfcDbzLsI1d7HSZoJVuqYEG7pkeyiwmvCtVKLpVJVF6YIfBewup2
+0h/Kpv4J4fa7Z8rsczz+EWzjtx0M0oUH2G0eS9qbmCKcSFb40G8XqPAElLiBCr/dbq5CBqKu
+a98zDfXveF64q970QIXwGFMR+cBN/HQ66cvlYsVTmwjFjefVwsfeiiA8oNSKJy36Fa+pYJI+
+KDz6G3o/7tMfJDOER59jRUL4NEo17t59Pp8D4dfr1baHeIvwGLtAu3MPNwNDsZMQ7qFEtHmI
+khRDwkg6cTgcbKTgkkcJP+6D46RwQ2+VHs9YBgg3uETxeLwXpz7N9E7V3RfYh/cJ+zvZ5mQU
+RrjvQfLb86OkNxHNWH6bZmMF0s3VbJtGdPMqHRHCIbtDRCYgvAPCRaH1H9QF4/6FJZ5PAAAA
+AElFTkSuQmCC</item>
+		<item item-id="24">iVBORw0KGgoAAAANSUhEUgAAAFQAAAAnCAYAAACR3W+uAAAAAXNSR0IArs4c6QAAAARnQU1B
+AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHSSURBVGhD7ZjNkYMgFIBtIH2kBrvY
+JhiL8JK7B7uwA0+bAva0Xh1PdmAHLA/FKApB8yLEfd/Mm+FPA988wEnECVRIKDIkFJmghEZR
+hBa+CE7op0NCkQlY6Df/uYg6tIn4vQ3NGu3XhfOrodMDAQsFeqlWmfAMCV1nq1CAMtTA+vlJ
+QndDQpEhociQUGSchd6uszoJNbAU2ssUHVoIocMIkDu2ByJVzCQM1jP08yChyJBQZGar6LqO
+J0nCsyyTC4T6Kk3OY9HPyqGOwCmFwqLu97ssF0Uh5dppeB6v/x8ZbbQNz7yXfXOdjnNhIbSu
+a1muqsr5JRjov6UWsScw2frehVCFm1CcDIXx78dThrZtK8tuWx4H18n64GWhEHAppWl62KXk
+OlkfKCeuc1wIha1+NCQUmZCFbmUhVN3yR/JMaJPHcowMOGdKNjtuZD/W+fMiQaSGTWjJQCTj
+oy4hE8Yrf6NsEvrAKFRefjHPm6GuoAy1YxLaZ98kOw2QUA2TULnd41x8ktv510LleacJtGYo
+CX2Oq9D+Alo5Q8XZyiaNtOUFSqJR5sDilhclpmUtCRW4CgV6qSq0S2r4jJIRgFRvQgEl4kyQ
+UGS8r4aEInMuoZz/AS1nrdW7XgrzAAAAAElFTkSuQmCC</item>
+		<item item-id="25">iVBORw0KGgoAAAANSUhEUgAAAE0AAAAlCAYAAAAHrmSHAAAAAXNSR0IArs4c6QAAAARnQU1B
+AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHASURBVGhD7ZjLrcIwEEVdDyVYtEAb
+3tEJC9dBAREV0ER2FBCBnsTWz+NfbHAix0HxCOZIlmIIKBzuzASYIhZD0iogaRWQtAoaS+uV
+5Ewx9rJE554H4nO4kr17uCEIkmalBE+dMIL8vpciiOqEFselfkVb8Elze56LVC8VZ0LFOWwB
+Omm95NNlCNIoaUDcs/RK+tkLunSzCdwYXEmDfjaZpE4JBCkD0JUnNPtcmjrRvpd5EA4Cnaho
+egLQ58Je9zXRuEQbS0v7WUiYu+2AgcDjfucea93W3qWFC7Yr/sYJSyLNjvu4d9hSwTCxMDFK
+MzeOmeib5OH4+YKFIO09ZZ6ZtBnRv1fCqbTsfZBt1vMlmjb0ZG1qtO464vNKWJe0lcQXu3R9
+kqXvO541VWpTvS7hR5MGmL9eMtNz2w++PaukAbZMxzeZFfYlgyD+vCVMnOUS9gVCSviQNM9v
+ySulTC2RQNIqIGkVoJP2vN3Uc7dTj8NBXx0ze2zgS5oWNZxO5nA4Ho1AbKCUdr9czOFwPps9
+NlBK85C0UrSkx/VqDqk8S4FkgTg9CP72exoERWhhpiwRQ9IqQCnNT0+s4JOGHqX+AXs7lrJZ
+6UsSAAAAAElFTkSuQmCC</item>
+		<item item-id="26">iVBORw0KGgoAAAANSUhEUgAAAFAAAAAlCAYAAADV/m7fAAAAAXNSR0IArs4c6QAAAARnQU1B
+AACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG5SURBVGhD7ZmxkYMwEEXVgPu4GtSF
+e7hhKILEuQNqISAyBTgyOREd0MGeVggQh+CwZcPq2DejMcYyhjd/0TIWwHjBAj1hgZ6wQE8C
+EniBh1Cni+PrYvbtTyACb3A/neB+w80z1MJsEyAMgcSk2dAXqOWZ0iVWvggn0BMW6AkL9IQF
+ehKAQKv/U+NBaw2ZF1jXtTpfoV/d5BCpz3GOiHKz73jMCkySRMuJ49jssakglRLSCjdTkMJs
+HxCnQExdlmVQlqWWiK8jDi7NxinQTp0uUTV6tDxTujiWytfM/c8VPhGIacP0dThT+HQCseQt
+6fb4mN3XftOet4bJLNc9b3LAjUrYvpil8U6ePe5oFiavKArzbqBbkftkcgJ7RrPcK24LfoYH
+bZpmswTuwcsCMV32l+fG9fo99H9qLAYowEXEvtY1rJt1IFjgxoQjMI9G6aByWwhCYJVKJS1S
+T98d7XO4JLCK0Rc4t+LrRO7fCZAXOE1fB40UhiFQpqot/k3bKLPAP+AE+jLXjBN5GqIvUJFH
+2LpMV+HPPUevJwiBSFvKQx9IQR4SjMCW4X8YbqS9oCMyUIF0YIFeAPwAFdlcWrnQlAoAAAAA
+SUVORK5CYII=</item>
+	</binaryContent>
+</worksheet>

@@ -1,0 +1,275 @@
+********************************************************************************
+***                  Micro-Cap 10.0.1.0 Evaluation Version                   ***
+***                                    *                                     ***
+***                                    *                                     ***
+***                         AC Analysis of circuit13                         ***
+***                           17.10.2017 17:18:24                            ***
+********************************************************************************
+Limits
+======
+Frequency Range  Linear 3000MEG,100k
+Number of Points 1001
+Temperature      Linear 27
+Maximum Change % 5
+Noise Input      NONE
+Noise Output     2
+Run Options      Normal
+State Variables  Zero
+Operating Point  On
+
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27 
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:          SIGNAL              V4   
+Using model:         1MHZ            1MHZ   
+A                  1.000 (*)       1.000 (*)
+DC                 0.000 (*)       0.000 (*)
+F                1.000MEG(*)     1.000MEG(*)
+PH                 0.000 (*)       0.000 (*)
+RP                 0.000 (*)       0.000 (*)
+RS                 1.000m(*)       1.000m(*)
+TAU                0.000 (*)       0.000 (*)
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Bipolar Junction Transistors NPN
+=====================================================================
+Instance:             VT1             VT2   
+Using model:      KT3101A         KT3101A   
+LEVEL                   1(*)            1(*)
+AF                 1.000 (*)       1.000 (*)
+BF               245.800         245.800    
+BR                 1.883           1.883    
+CJC                1.166p          1.166p   
+CJE                1.354p          1.354p   
+CJS                0.000 (*)       0.000 (*)
+EG                 1.110           1.110    
+FC               500.000m        500.000m   
+GAMMA             10.000p(*)      10.000p(*)
+IKF               54.660m         54.660m   
+IKR               57.630m         57.630m   
+IRB              720.000u        720.000u   
+IS                25.630f         25.630f   
+ISC              108.600f        108.600f   
+ISE               27.930f         27.930f   
+ISS                0.000 (*)       0.000 (*)
+ITF              367.000m        367.000m   
+KF                 0.000 (*)       0.000 (*)
+MJC              297.400m        297.400m   
+MJE              313.700m        313.700m   
+MJS                0.000 (*)       0.000 (*)
+NC                 2.000           2.000    
+NE                 1.254           1.254    
+NF                 1.000 (*)       1.000 (*)
+NK               500.000m(*)     500.000m(*)
+NR                 1.000 (*)       1.000 (*)
+NS                 1.000 (*)       1.000 (*)
+PTF                0.000 (*)       0.000 (*)
+QCO                0.000 (*)       0.000 (*)
+QUASIMOD           0.000 (*)       0.000 (*)
+RB                28.000          28.000    
+RBM                8.000           8.000    
+RC                 3.450           3.450    
+RCO                0.000 (*)       0.000 (*)
+RE                 0.000 (*)       0.000 (*)
+T_ABS           UNDEFINED(*)    UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)    UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)    UNDEFINED(*)
+TF                22.390p         22.390p   
+TR               463.800p        463.800p   
+TRB1               0.000 (*)       0.000 (*)
+TRB2               0.000 (*)       0.000 (*)
+TRC1               0.000 (*)       0.000 (*)
+TRC2               0.000 (*)       0.000 (*)
+TRE1               0.000 (*)       0.000 (*)
+TRE2               0.000 (*)       0.000 (*)
+TRM1               0.000 (*)       0.000 (*)
+TRM2               0.000 (*)       0.000 (*)
+VAF               56.000          56.000    
+VAR               20.000          20.000    
+VG                 1.206 (*)       1.206 (*)
+VJC              750.000m        750.000m   
+VJE              650.000m        650.000m   
+VJS              750.000m(*)     750.000m(*)
+VO                10.000 (*)      10.000 (*)
+VTF               12.000          12.000    
+XCJC             500.000m        500.000m   
+XTB                1.500           1.500    
+XTF                2.000           2.000    
+XTI                3.000           3.000    
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1             5.000   2           668.000m  3             0.000  
+4           668.000m  5             5.000   6             0.000  
+7           668.000m  8             5.000   9           668.000m 
+10            0.000   11            5.000  
+
+DC Operating Point Inductor Current
+===================================
+Inductor     Current  Inductor     Current  Inductor     Current 
+L2          -40.299u  L1            3.997m  L5           -3.956m 
+L6          -40.299u  L7           -3.956m 
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors NPN
+====================================================================
+Instance:                VT1             VT2
+Using model:         KT3101A         KT3101A
+
+Beta Terms:
+BETADC               98.176          98.176 
+BETAAC              104.542         104.542 
+
+Capacitance Terms:
+CPI                   5.452p          5.452p
+CMU                 330.261f        330.261f
+CBX                 330.282f        330.282f
+CJS                   0.000           0.000 
+
+Conductance Terms:
+GM                  143.397m        143.397m
+
+Current Terms:
+IB                   40.299u         40.299u
+IC                    3.956m          3.956m
+
+Resistance Terms:
+RPI                 729.043         729.043 
+RX                   25.943          25.943 
+RO                   14.774K         14.774K
+
+Voltage Terms:
+VBE                 668.000m        668.000m
+VBC                  -4.332          -4.332 
+VCE                   5.000           5.000 
+
+Frequency Terms:
+FT                    3.733G          3.733G
+
+Power DC Terms:
+PD                   19.809m         19.809m
+PS                    0.000           0.000 
+
+DC Pin Currents:
+Ib                   40.299u         40.299u
+Ic                    3.956m          3.956m
+Ie                   -3.997m         -3.997m
+Is                    0.000           0.000 
+
+Condition:
+State                    LIN             LIN
+
+Device Variables:
+area                  1.000           1.000 
+vbe                   0.000           0.000 
+vce                   0.000           0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:           SIGNAL.RS           V4.RS
+V                      0.000           0.000 
+Power DC Terms:
+PD                     0.000           0.000 
+
+DC Pin Currents:
+Ir                     0.000           0.000 
+
+Device Variables:
+tc1                    0.000           0.000 
+tc2                    0.000           0.000 
+
+
+
+Operating Point for Devices of Type Inductor
+============================================
+Instance:                  L2              L1              L5              L6
+V                      0.000           0.000           0.000           0.000 
+Power DC Terms:
+PS                     0.000           0.000           0.000           0.000 
+
+DC Pin Currents:
+Il                   -40.299u          3.997m         -3.956m        -40.299u
+
+Device Variables:
+ic                     0.000           0.000           0.000           0.000 
+
+
+Instance:                  L7
+V                      0.000 
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Il                    -3.956m
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C2              C1              C5              C6
+V                    668.000m          0.000           5.000        -668.000m
+Power DC Terms:
+PS                     0.000           0.000           0.000           0.000 
+
+DC Pin Currents:
+Ic                     0.000           0.000           0.000           0.000 
+
+Device Variables:
+ic                     0.000           0.000           0.000           0.000 
+
+
+Instance:                  C7
+V                      5.000 
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:              SIGNAL              V4
+Using model:             1MHZ            1MHZ
+V                      0.000           0.000 
+Power DC Terms:
+PG                     0.000           0.000 
+
+DC Pin Currents:
+ISource                0.000           0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                 V2              V1              V3              V5
+V                     5.000         668.000m        668.000m          5.000 
+Power DC Terms:
+PG                   19.782m         26.920u         26.920u         19.782m
+
+DC Pin Currents:
+ISource              -3.956m        -40.299u        -40.299u         -3.956m
+
+

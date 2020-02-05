@@ -1,0 +1,83 @@
+********************************************************************************
+***                  Micro-Cap 10.1.0.0 Evaluation Version                   ***
+***                                 User-PC                                  ***
+***                                WarnerBros                                ***
+***                          Dynamic DC of circuit1                          ***
+***                            27.11.2018 2:06:13                            ***
+********************************************************************************
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27 
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1            23.223   2            39.000   3            23.223  
+4            23.223  
+
+DC Operating Point Inductor Current
+===================================
+Inductor     Current 
+L1         -433.423m 
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                R1            R2            R3            R4
+V                  -15.777        23.223        15.777         0.000 
+Power DC Terms:
+PD                  12.446        28.385         6.223         0.000 
+
+DC Pin Currents:
+Ir                -788.845m        1.222       394.423m        0.000 
+
+Device Variables:
+tc1                  0.000         0.000         0.000         0.000 
+tc2                  0.000         0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type Inductor
+============================================
+Instance:                L1
+V                    3.553f
+Power DC Terms:
+PS                  -1.540f
+
+DC Pin Currents:
+Il                -433.423m
+
+Device Variables:
+ic                   0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                C1            C2
+V                  -23.223        23.223 
+Power DC Terms:
+PS                   0.000         0.000 
+
+DC Pin Currents:
+Ic                   0.000         0.000 
+
+Device Variables:
+ic                   0.000         0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                Y             E
+V                 -23.223        39.000 
+Power DC Terms:
+PG                905.701m       46.147 
+
+DC Pin Currents:
+ISource            39.000m       -1.183 
+
+

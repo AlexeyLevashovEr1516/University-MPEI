@@ -1,0 +1,116 @@
+********************************************************************************
+***                  Micro-Cap 10.1.0.0 Evaluation Version                   ***
+***                                 User-PC                                  ***
+***                                WarnerBros                                ***
+***                  Transient Analysis of circuit1 laba 4                   ***
+***                           18.12.2017 16:59:58                            ***
+********************************************************************************
+Limits
+======
+Time Range           1.1m
+Maximum Time Step    0.1u
+Number of Points     51
+Temperature          Linear 27
+Retrace Runs         1
+Run Options          Normal
+State Variables      Zero
+Operating Point      On
+Operating Point Only Off
+
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27 
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1              V2              V4   
+Using model:        U_MOD           U_SIG           U_SIG   
+A                500.000m          1.000 (*)       1.000 (*)
+DC                 1.000           0.000 (*)       0.000 (*)
+F                  5.000K        100.000K        100.000K   
+PH                 0.000 (*)       0.000 (*)       0.000 (*)
+RP                 0.000 (*)       0.000 (*)       0.000 (*)
+RS                 1.000m(*)       1.000m(*)       1.000m(*)
+TAU                0.000 (*)       0.000 (*)       0.000 (*)
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Pulse
+==========================================
+Instance:              V5   
+Using model:      U_PULSE   
+P1                 0.000    
+P2                 1.000n   
+P3               110.001u   
+P4               110.002u   
+P5                 1.100m   
+VONE               1.000    
+VZERO              0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1             1.000   2             0.000   3             0.000  
+4             0.000   5             0.000   6             0.000  
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:               V1.RS           V2.RS           V4.RS
+V                      0.000           0.000           0.000 
+Power DC Terms:
+PD                     0.000           0.000           0.000 
+
+DC Pin Currents:
+Ir                     0.000           0.000           0.000 
+
+Device Variables:
+tc1                    0.000           0.000           0.000 
+tc2                    0.000           0.000           0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1              V2              V4
+Using model:            U_MOD           U_SIG           U_SIG
+V                      1.000           0.000           0.000 
+Power DC Terms:
+PG                     0.000           0.000           0.000 
+
+DC Pin Currents:
+ISource                0.000           0.000           0.000 
+
+
+
+Operating Point for Devices of Type Pulse
+=========================================
+Instance:                  V5
+Using model:          U_PULSE
+V                      0.000 
+Power DC Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource                0.000 
+
+
+
+Operating Point for Devices of Type Function Source
+===================================================
+Instance:              X1.E1           X2.E1
+V                     0.000           0.000 
+Power DC Terms:
+PG                    0.000           0.000 
+
+DC Pin Currents:
+ISource               0.000           0.000 
+
+

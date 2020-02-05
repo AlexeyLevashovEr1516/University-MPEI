@@ -1,0 +1,61 @@
+********************************************************************************
+***                  Micro-Cap 10.1.0.0 Evaluation Version                   ***
+***                                 User-PC                                  ***
+***                                WarnerBros                                ***
+***                       Dynamic DC of circuit1_ypr2                        ***
+***                            18.12.2017 0:24:11                            ***
+********************************************************************************
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27 
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1            18.049   2            58.049   3             9.000  
+4            -9.000  
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                R1            R2            R3            R4         E.int
+V                  -18.049       -18.049        40.000       -40.000        -9.000 
+Power DC Terms:
+PD                 108.584        32.575m      400.000m      320.000m       81.000p
+
+DC Pin Currents:
+Ir                  -6.016        -1.805m       10.000m       -8.000m       -9.000p
+
+Device Variables:
+tc1                  0.000         0.000         0.000         0.000         0.000 
+tc2                  0.000         0.000         0.000         0.000         0.000 
+
+
+Instance:             E.int
+V                    9.000 
+Power DC Terms:
+PD                  81.000p
+
+DC Pin Currents:
+Ir                   9.000p
+
+Device Variables:
+tc1                  0.000 
+tc2                  0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                Y             E            Y1
+V                 -58.049        18.000       -18.049 
+Power DC Terms:
+PG                  1.045       162.000p      108.292 
+
+DC Pin Currents:
+ISource            18.000m       -9.000p        6.000 
+
+

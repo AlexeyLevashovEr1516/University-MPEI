@@ -1,0 +1,241 @@
+********************************************************************************
+***                  Micro-Cap 10.0.1.0 Evaluation Version                   ***
+***                                    *                                     ***
+***                                    *                                     ***
+***                         AC Analysis of circuit13                         ***
+***                           21.11.2017 14:10:55                            ***
+********************************************************************************
+Limits
+======
+Frequency Range  Log 1G,1
+Number of Points 1001
+Temperature      Linear 27
+Maximum Change % 5
+Noise Input      V2
+Noise Output     6
+Run Options      Normal
+State Variables  Zero
+Operating Point  On
+
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27 
+
+Model parameters for devices of type Bipolar Junction Transistors NPN
+=====================================================================
+Instance:             VT1   
+Using model:      KT3101A   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BF               245.800    
+BR                 1.883    
+CJC                1.166p   
+CJE                1.354p   
+CJS                0.000 (*)
+EG                 1.110    
+FC               500.000m   
+GAMMA             10.000p(*)
+IKF               54.660m   
+IKR               57.630m   
+IRB              720.000u   
+IS                25.630f   
+ISC              108.600f   
+ISE               27.930f   
+ISS                0.000 (*)
+ITF              367.000m   
+KF                 0.000 (*)
+MJC              297.400m   
+MJE              313.700m   
+MJS                0.000 (*)
+NC                 2.000    
+NE                 1.254    
+NF                 1.000 (*)
+NK               500.000m(*)
+NR                 1.000 (*)
+NS                 1.000 (*)
+PTF                0.000 (*)
+QCO                0.000 (*)
+QUASIMOD           0.000 (*)
+RB                28.000    
+RBM                8.000    
+RC                 3.450    
+RCO                0.000 (*)
+RE                 0.000 (*)
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TF                22.390p   
+TR               463.800p   
+TRB1               0.000 (*)
+TRB2               0.000 (*)
+TRC1               0.000 (*)
+TRC2               0.000 (*)
+TRE1               0.000 (*)
+TRE2               0.000 (*)
+TRM1               0.000 (*)
+TRM2               0.000 (*)
+VAF               56.000    
+VAR               20.000    
+VG                 1.206 (*)
+VJC              750.000m   
+VJE              650.000m   
+VJS              750.000m(*)
+VO                10.000 (*)
+VTF               12.000    
+XCJC             500.000m   
+XTB                1.500    
+XTF                2.000    
+XTI                3.000    
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Pulse
+==========================================
+Instance:              V1   
+Using model:        PULSE   
+P1                 0.000    
+P2                 1.000n   
+P3                20.001u   
+P4                20.002u   
+P5               200.000u   
+VONE               2.000m   
+VZERO              0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1             0.000   2             1.667   3            12.000  
+4             6.067   5           998.964m  6             0.000  
+
+
+Operating Point for Devices of Type Bipolar Junction Transistors NPN
+====================================================================
+Instance:                VT1
+Using model:         KT3101A
+
+Beta Terms:
+BETADC               98.281 
+BETAAC              104.665 
+
+Capacitance Terms:
+CPI                   5.452p
+CMU                 328.962f
+CBX                 328.981f
+CJS                   0.000 
+
+Conductance Terms:
+GM                  143.378m
+
+Current Terms:
+IB                   40.248u
+IC                    3.956m
+
+Resistance Terms:
+RPI                 729.991 
+RX                   25.945 
+RO                   14.794K
+
+Voltage Terms:
+VBE                 667.961m
+VBC                  -4.400 
+VCE                   5.068 
+
+Frequency Terms:
+FT                    3.735G
+
+Power DC Terms:
+PD                   20.072m
+PS                    0.000 
+
+DC Pin Currents:
+Ib                   40.248u
+Ic                    3.956m
+Ie                   -3.996m
+Is                    0.000 
+
+Condition:
+State                    LIN
+
+Device Variables:
+area                  1.000 
+vbe                   0.000 
+vce                   0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1              R2              R3              R4
+V                     10.333           1.667           5.933         998.964m
+Power DC Terms:
+PD                     4.134m        599.749u         23.470m          3.992m
+
+DC Pin Currents:
+Ir                   400.042u        359.794u          3.956m          3.996m
+
+Device Variables:
+tc1                    0.000           0.000           0.000           0.000 
+tc2                    0.000           0.000           0.000           0.000 
+
+
+Instance:                  RL
+V                      0.000 
+Power DC Terms:
+PD                     0.000 
+
+DC Pin Currents:
+Ir                     0.000 
+
+Device Variables:
+tc1                    0.000 
+tc2                    0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1              C2              C3              CL
+V                     -1.667         998.964m          6.067           0.000 
+Power DC Terms:
+PS                     0.000           0.000           0.000           0.000 
+
+DC Pin Currents:
+Ic                     0.000           0.000           0.000           0.000 
+
+Device Variables:
+ic                     0.000           0.000           0.000           0.000 
+
+
+
+Operating Point for Devices of Type Pulse
+=========================================
+Instance:                  V1
+Using model:            PULSE
+V                      0.000 
+Power DC Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource                0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                 V2
+V                    12.000 
+Power DC Terms:
+PG                   52.268m
+
+DC Pin Currents:
+ISource              -4.356m
+
+

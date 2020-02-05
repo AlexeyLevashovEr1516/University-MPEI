@@ -1,0 +1,47 @@
+********************************************************************************
+***                  Micro-Cap 10.1.0.0 Evaluation Version                   ***
+***                                 User-PC                                  ***
+***                                WarnerBros                                ***
+***                        Dynamic DC of circuit1_ypr                        ***
+***                           16.12.2018 20:14:17                            ***
+********************************************************************************
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27 
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1             8.751   2             9.098   3            -9.902  
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                R1            R2            R3
+V                  346.580m        9.902         8.751 
+Power DC Terms:
+PD                   8.580m      245.138m      382.912m
+
+DC Pin Currents:
+Ir                  24.756m       24.756m       43.756m
+
+Device Variables:
+tc1                  0.000         0.000         0.000 
+tc2                  0.000         0.000         0.000 
+
+
+
+Operating Point for Devices of Type SPICE Source
+================================================
+Instance:                Y             E
+V                  -8.751        19.000 
+Power DC Terms:
+PG                166.272m      470.358m
+
+DC Pin Currents:
+ISource            19.000m      -24.756m
+
+
