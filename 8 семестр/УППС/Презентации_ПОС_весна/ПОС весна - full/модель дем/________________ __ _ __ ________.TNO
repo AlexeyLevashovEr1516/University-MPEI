@@ -1,0 +1,174 @@
+********************************************************************************
+***                  Micro-Cap 10.0.1.0 Evaluation Version                   ***
+***                                    *                                     ***
+***                                    *                                     ***
+***         Transient Analysis of ________________ __ _ __ ________          ***
+***                           14.05.2018 12:30:45                            ***
+********************************************************************************
+Limits
+======
+Time Range           5m
+Maximum Time Step    10n
+Number of Points     51
+Temperature          Linear 27
+Retrace Runs         1
+Run Options          Normal
+State Variables      Zero
+Operating Point      On
+Operating Point Only Off
+
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27 
+
+Model parameters for devices of type Diode
+==========================================
+Instance:              D1   
+Using model:       KD219A   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BV                15.000    
+CJO               63.100p   
+EG                 1.110    
+FC               500.000m   
+IBV               10.000p   
+IBVL               0.000 (*)
+IKF                0.000 (*)
+IS                57.600n   
+ISR                0.000 (*)
+KF                 0.000 (*)
+M                330.000m   
+N                  1.120    
+NBV                1.000 (*)
+NBVL               1.000 (*)
+NR                 2.000 (*)
+RL                 0.000 (*)
+RS                 3.000m   
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TBV1               0.000 (*)
+TBV2               0.000 (*)
+TIKF               0.000 (*)
+TRS1               0.000 (*)
+TRS2               0.000 (*)
+TT                 1.230n   
+VJ               540.000m   
+XTI                3.000    
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:        U_MOD   
+A                  1.000 (*)
+DC                 0.000 (*)
+F                  2.760K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1             0.000   2            -0.007f  3             0.000  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                 D1
+Using model:          KD219A
+
+Capacitance Terms:
+CAP                  63.102p
+
+Current Terms:
+ID                1.279E-023
+
+Resistance Terms:
+REQ                 502.914K
+
+Voltage Terms:
+VD                    0.007f
+
+Power DC Terms:
+PD                8.910E-041
+PS                    0.000 
+
+DC Pin Currents:
+Id                1.279E-023
+
+Condition:
+State                    OFF
+
+Device Variables:
+area                  1.000 
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1           V1.RS
+V                      0.007f          0.000 
+Power DC Terms:
+PD                 2.427E-039          0.000 
+
+DC Pin Currents:
+Ir                 3.483E-022          0.000 
+
+Device Variables:
+tc1                    0.000           0.000 
+tc2                    0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1
+V                     -0.007f
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:            U_MOD
+V                      0.000 
+Power DC Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource                0.000 
+
+
+
+Operating Point for Devices of Type Function Source
+===================================================
+Instance:              X1.E1
+V                     0.000 
+Power DC Terms:
+PG                    0.000 
+
+DC Pin Currents:
+ISource           3.483E-022
+
+

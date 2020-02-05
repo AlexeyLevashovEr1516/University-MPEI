@@ -1,0 +1,162 @@
+********************************************************************************
+***                  Micro-Cap 10.0.1.0 Evaluation Version                   ***
+***                                    *                                     ***
+***                                    *                                     ***
+***             Transient Analysis of __ _ _________ __________              ***
+***                           14.05.2018 12:20:45                            ***
+********************************************************************************
+Limits
+======
+Time Range           50u
+Maximum Time Step    10n
+Number of Points     51
+Temperature          Linear 27
+Retrace Runs         1
+Run Options          Normal
+State Variables      Zero
+Operating Point      On
+Operating Point Only Off
+
+
+*****************************************************
+***                Temperature=27                 ***
+*****************************************************
+
+Temperature=27 
+
+Model parameters for devices of type Diode
+==========================================
+Instance:              D1              D2   
+Using model:       KD219A          KD219A   
+LEVEL                   1(*)            1(*)
+AF                 1.000 (*)       1.000 (*)
+BV                15.000          15.000    
+CJO               63.100p         63.100p   
+EG                 1.110           1.110    
+FC               500.000m        500.000m   
+IBV               10.000p         10.000p   
+IBVL               0.000 (*)       0.000 (*)
+IKF                0.000 (*)       0.000 (*)
+IS                57.600n         57.600n   
+ISR                0.000 (*)       0.000 (*)
+KF                 0.000 (*)       0.000 (*)
+M                330.000m        330.000m   
+N                  1.120           1.120    
+NBV                1.000 (*)       1.000 (*)
+NBVL               1.000 (*)       1.000 (*)
+NR                 2.000 (*)       2.000 (*)
+RL                 0.000 (*)       0.000 (*)
+RS                 3.000m          3.000m   
+T_ABS           UNDEFINED(*)    UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)    UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)    UNDEFINED(*)
+TBV1               0.000 (*)       0.000 (*)
+TBV2               0.000 (*)       0.000 (*)
+TIKF               0.000 (*)       0.000 (*)
+TRS1               0.000 (*)       0.000 (*)
+TRS2               0.000 (*)       0.000 (*)
+TT                 1.230n          1.230n   
+VJ               540.000m        540.000m   
+XTI                3.000           3.000    
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:       SIGNAL   
+A                  2.000    
+DC                 0.000 (*)
+F                465.000K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage  Node         Voltage 
+1            -0.002f  2             0.000   3         5.263E-020 
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                 D1              D2
+Using model:          KD219A          KD219A
+
+Capacitance Terms:
+CAP                  63.102p         63.102p
+
+Current Terms:
+ID                1.608E-030     -6.395E-024
+
+Resistance Terms:
+REQ                 502.914K        502.914K
+
+Voltage Terms:
+VD                    0.002f         -0.002f
+
+Power DC Terms:
+PD                2.585E-048      1.062E-041
+PS                    0.000           0.000 
+
+DC Pin Currents:
+Id                1.608E-030     -6.395E-024
+
+Condition:
+State                    OFF             OFF
+
+Device Variables:
+area                  1.000           1.000 
+ic                    0.000           0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1           V1.RS
+V                 -5.263E-020          0.000 
+Power DC Terms:
+PD                 5.540E-044          0.000 
+
+DC Pin Currents:
+Ir                -1.053E-024          0.000 
+
+Device Variables:
+tc1                    0.000           0.000 
+tc2                    0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1              C2
+V                     -0.002f      5.263E-020
+Power DC Terms:
+PS                     0.000           0.000 
+
+DC Pin Currents:
+Ic                     0.000           0.000 
+
+Device Variables:
+ic                     0.000           0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:           SIGNAL
+V                      0.000 
+Power DC Terms:
+PG                     0.000 
+
+DC Pin Currents:
+ISource                0.000 
+
+

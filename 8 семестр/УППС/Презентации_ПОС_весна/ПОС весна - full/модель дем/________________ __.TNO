@@ -1,0 +1,4350 @@
+********************************************************************************
+***                  Micro-Cap 10.0.1.0 Evaluation Version                   ***
+***                                    *                                     ***
+***                                    *                                     ***
+***                Transient Analysis of ________________ __                 ***
+***                           07.05.2018 12:00:16                            ***
+********************************************************************************
+Limits
+======
+Time Range           50u
+Maximum Time Step    10n
+Number of Points     51
+Temperature          Linear 27
+Retrace Runs         1
+Run Options          Normal
+State Variables      Zero
+Operating Point      On
+Operating Point Only Off
+
+Stepping Options
+================
+Stepping is Nested
+
+Step What  V1 DC
+From       0.1
+To         3
+Step Value 0.1
+Method     Linear
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                   V1.DC=.1                    ***
+*****************************************************
+
+Temperature=27 V1.DC=.1
+
+Model parameters for devices of type Diode
+==========================================
+Instance:              D1   
+Using model:       KD219A   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BV                15.000    
+CJO               63.100p   
+EG                 1.110    
+FC               500.000m   
+IBV               10.000p   
+IBVL               0.000 (*)
+IKF                0.000 (*)
+IS                57.600n   
+ISR                0.000 (*)
+KF                 0.000 (*)
+M                330.000m   
+N                  1.120    
+NBV                1.000 (*)
+NBVL               1.000 (*)
+NR                 2.000 (*)
+RL                 0.000 (*)
+RS                 3.000m   
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TBV1               0.000 (*)
+TBV2               0.000 (*)
+TIKF               0.000 (*)
+TRS1               0.000 (*)
+TRS2               0.000 (*)
+TT                 1.230n   
+VJ               540.000m   
+XTI                3.000    
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:       SIGNAL   
+A                  1.000 (*)
+DC               100.000m   
+F                465.000K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage 
+1           100.000m  2            29.714m 
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                 D1
+Using model:          KD219A
+
+Capacitance Terms:
+CAP                  66.099p
+
+Current Terms:
+ID                  594.281n
+
+Resistance Terms:
+REQ                  44.437K
+
+Voltage Terms:
+VD                   70.286m
+
+Power DC Terms:
+PD                   41.770n
+PS                    0.000 
+
+DC Pin Currents:
+Id                  594.281n
+
+Condition:
+State                    OFF
+
+Device Variables:
+area                  1.000 
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1           V1.RS
+V                    -29.714m       -594.281p
+Power DC Terms:
+PD                    17.659n          0.353f
+
+DC Pin Currents:
+Ir                  -594.281n       -594.281n
+
+Device Variables:
+tc1                    0.000           0.000 
+tc2                    0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1
+V                     29.714m
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:           SIGNAL
+V                    100.000m
+Power DC Terms:
+PG                    59.428n
+
+DC Pin Currents:
+ISource             -594.281n
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                   V1.DC=.2                    ***
+*****************************************************
+
+Temperature=27 V1.DC=.2
+
+Model parameters for devices of type Diode
+==========================================
+Instance:              D1   
+Using model:       KD219A   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BV                15.000    
+CJO               63.100p   
+EG                 1.110    
+FC               500.000m   
+IBV               10.000p   
+IBVL               0.000 (*)
+IKF                0.000 (*)
+IS                57.600n   
+ISR                0.000 (*)
+KF                 0.000 (*)
+M                330.000m   
+N                  1.120    
+NBV                1.000 (*)
+NBVL               1.000 (*)
+NR                 2.000 (*)
+RL                 0.000 (*)
+RS                 3.000m   
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TBV1               0.000 (*)
+TBV2               0.000 (*)
+TIKF               0.000 (*)
+TRS1               0.000 (*)
+TRS2               0.000 (*)
+TT                 1.230n   
+VJ               540.000m   
+XTI                3.000    
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:       SIGNAL   
+A                  1.000 (*)
+DC               200.000m   
+F                465.000K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage 
+1           200.000m  2            97.213m 
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                 D1
+Using model:          KD219A
+
+Capacitance Terms:
+CAP                  67.739p
+
+Current Terms:
+ID                    1.944u
+
+Resistance Terms:
+REQ                  14.470K
+
+Voltage Terms:
+VD                  102.787m
+
+Power DC Terms:
+PD                  199.845n
+PS                    0.000 
+
+DC Pin Currents:
+Id                    1.944u
+
+Condition:
+State                    OFF
+
+Device Variables:
+area                  1.000 
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1           V1.RS
+V                    -97.213m         -1.944n
+Power DC Terms:
+PD                   189.007n          3.780f
+
+DC Pin Currents:
+Ir                    -1.944u         -1.944u
+
+Device Variables:
+tc1                    0.000           0.000 
+tc2                    0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1
+V                     97.213m
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:           SIGNAL
+V                    200.000m
+Power DC Terms:
+PG                   388.852n
+
+DC Pin Currents:
+ISource               -1.944u
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                   V1.DC=.3                    ***
+*****************************************************
+
+Temperature=27 V1.DC=.3
+
+Model parameters for devices of type Diode
+==========================================
+Instance:              D1   
+Using model:       KD219A   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BV                15.000    
+CJO               63.100p   
+EG                 1.110    
+FC               500.000m   
+IBV               10.000p   
+IBVL               0.000 (*)
+IKF                0.000 (*)
+IS                57.600n   
+ISR                0.000 (*)
+KF                 0.000 (*)
+M                330.000m   
+N                  1.120    
+NBV                1.000 (*)
+NBVL               1.000 (*)
+NR                 2.000 (*)
+RL                 0.000 (*)
+RS                 3.000m   
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TBV1               0.000 (*)
+TBV2               0.000 (*)
+TIKF               0.000 (*)
+TRS1               0.000 (*)
+TRS2               0.000 (*)
+TT                 1.230n   
+VJ               540.000m   
+XTI                3.000    
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:       SIGNAL   
+A                  1.000 (*)
+DC               300.000m   
+F                465.000K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage 
+1           300.000m  2           179.787m 
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                 D1
+Using model:          KD219A
+
+Capacitance Terms:
+CAP                  68.723p
+
+Current Terms:
+ID                    3.596u
+
+Resistance Terms:
+REQ                   7.929K
+
+Voltage Terms:
+VD                  120.213m
+
+Power DC Terms:
+PD                  432.255n
+PS                    0.000 
+
+DC Pin Currents:
+Id                    3.596u
+
+Condition:
+State                    OFF
+
+Device Variables:
+area                  1.000 
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1           V1.RS
+V                   -179.787m         -3.596n
+Power DC Terms:
+PD                   646.467n         12.929f
+
+DC Pin Currents:
+Ir                    -3.596u         -3.596u
+
+Device Variables:
+tc1                    0.000           0.000 
+tc2                    0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1
+V                    179.787m
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:           SIGNAL
+V                    300.000m
+Power DC Terms:
+PG                     1.079u
+
+DC Pin Currents:
+ISource               -3.596u
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                   V1.DC=.4                    ***
+*****************************************************
+
+Temperature=27 V1.DC=.4
+
+Model parameters for devices of type Diode
+==========================================
+Instance:              D1   
+Using model:       KD219A   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BV                15.000    
+CJO               63.100p   
+EG                 1.110    
+FC               500.000m   
+IBV               10.000p   
+IBVL               0.000 (*)
+IKF                0.000 (*)
+IS                57.600n   
+ISR                0.000 (*)
+KF                 0.000 (*)
+M                330.000m   
+N                  1.120    
+NBV                1.000 (*)
+NBVL               1.000 (*)
+NR                 2.000 (*)
+RL                 0.000 (*)
+RS                 3.000m   
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TBV1               0.000 (*)
+TBV2               0.000 (*)
+TIKF               0.000 (*)
+TRS1               0.000 (*)
+TRS2               0.000 (*)
+TT                 1.230n   
+VJ               540.000m   
+XTI                3.000    
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:       SIGNAL   
+A                  1.000 (*)
+DC               400.000m   
+F                465.000K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage 
+1           400.000m  2           268.337m 
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                 D1
+Using model:          KD219A
+
+Capacitance Terms:
+CAP                  69.427p
+
+Current Terms:
+ID                    5.367u
+
+Resistance Terms:
+REQ                   5.340K
+
+Voltage Terms:
+VD                  131.663m
+
+Power DC Terms:
+PD                  706.601n
+PS                    0.000 
+
+DC Pin Currents:
+Id                    5.367u
+
+Condition:
+State                    OFF
+
+Device Variables:
+area                  1.000 
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1           V1.RS
+V                   -268.337m         -5.367n
+Power DC Terms:
+PD                     1.440u         28.802f
+
+DC Pin Currents:
+Ir                    -5.367u         -5.367u
+
+Device Variables:
+tc1                    0.000           0.000 
+tc2                    0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1
+V                    268.337m
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:           SIGNAL
+V                    400.000m
+Power DC Terms:
+PG                     2.147u
+
+DC Pin Currents:
+ISource               -5.367u
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                   V1.DC=.5                    ***
+*****************************************************
+
+Temperature=27 V1.DC=.5
+
+Model parameters for devices of type Diode
+==========================================
+Instance:              D1   
+Using model:       KD219A   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BV                15.000    
+CJO               63.100p   
+EG                 1.110    
+FC               500.000m   
+IBV               10.000p   
+IBVL               0.000 (*)
+IKF                0.000 (*)
+IS                57.600n   
+ISR                0.000 (*)
+KF                 0.000 (*)
+M                330.000m   
+N                  1.120    
+NBV                1.000 (*)
+NBVL               1.000 (*)
+NR                 2.000 (*)
+RL                 0.000 (*)
+RS                 3.000m   
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TBV1               0.000 (*)
+TBV2               0.000 (*)
+TIKF               0.000 (*)
+TRS1               0.000 (*)
+TRS2               0.000 (*)
+TT                 1.230n   
+VJ               540.000m   
+XTI                3.000    
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:       SIGNAL   
+A                  1.000 (*)
+DC               500.000m   
+F                465.000K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage 
+1           500.000m  2           359.910m 
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                 D1
+Using model:          KD219A
+
+Capacitance Terms:
+CAP                  69.982p
+
+Current Terms:
+ID                    7.198u
+
+Resistance Terms:
+REQ                   3.992K
+
+Voltage Terms:
+VD                  140.090m
+
+Power DC Terms:
+PD                    1.008u
+PS                    0.000 
+
+DC Pin Currents:
+Id                    7.198u
+
+Condition:
+State                    OFF
+
+Device Variables:
+area                  1.000 
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1           V1.RS
+V                   -359.910m         -7.198n
+Power DC Terms:
+PD                     2.591u         51.814f
+
+DC Pin Currents:
+Ir                    -7.198u         -7.198u
+
+Device Variables:
+tc1                    0.000           0.000 
+tc2                    0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1
+V                    359.910m
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:           SIGNAL
+V                    500.000m
+Power DC Terms:
+PG                     3.599u
+
+DC Pin Currents:
+ISource               -7.198u
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                   V1.DC=.6                    ***
+*****************************************************
+
+Temperature=27 V1.DC=.6
+
+Model parameters for devices of type Diode
+==========================================
+Instance:              D1   
+Using model:       KD219A   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BV                15.000    
+CJO               63.100p   
+EG                 1.110    
+FC               500.000m   
+IBV               10.000p   
+IBVL               0.000 (*)
+IKF                0.000 (*)
+IS                57.600n   
+ISR                0.000 (*)
+KF                 0.000 (*)
+M                330.000m   
+N                  1.120    
+NBV                1.000 (*)
+NBVL               1.000 (*)
+NR                 2.000 (*)
+RL                 0.000 (*)
+RS                 3.000m   
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TBV1               0.000 (*)
+TBV2               0.000 (*)
+TIKF               0.000 (*)
+TRS1               0.000 (*)
+TRS2               0.000 (*)
+TT                 1.230n   
+VJ               540.000m   
+XTI                3.000    
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:       SIGNAL   
+A                  1.000 (*)
+DC               600.000m   
+F                465.000K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage 
+1           600.000m  2           453.276m 
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                 D1
+Using model:          KD219A
+
+Capacitance Terms:
+CAP                  70.447p
+
+Current Terms:
+ID                    9.066u
+
+Resistance Terms:
+REQ                   3.175K
+
+Voltage Terms:
+VD                  146.724m
+
+Power DC Terms:
+PD                    1.330u
+PS                    0.000 
+
+DC Pin Currents:
+Id                    9.066u
+
+Condition:
+State                    OFF
+
+Device Variables:
+area                  1.000 
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1           V1.RS
+V                   -453.276m         -9.066n
+Power DC Terms:
+PD                     4.109u         82.184f
+
+DC Pin Currents:
+Ir                    -9.066u         -9.066u
+
+Device Variables:
+tc1                    0.000           0.000 
+tc2                    0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1
+V                    453.276m
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:           SIGNAL
+V                    600.000m
+Power DC Terms:
+PG                     5.439u
+
+DC Pin Currents:
+ISource               -9.066u
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                   V1.DC=.7                    ***
+*****************************************************
+
+Temperature=27 V1.DC=.7
+
+Model parameters for devices of type Diode
+==========================================
+Instance:              D1   
+Using model:       KD219A   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BV                15.000    
+CJO               63.100p   
+EG                 1.110    
+FC               500.000m   
+IBV               10.000p   
+IBVL               0.000 (*)
+IKF                0.000 (*)
+IS                57.600n   
+ISR                0.000 (*)
+KF                 0.000 (*)
+M                330.000m   
+N                  1.120    
+NBV                1.000 (*)
+NBVL               1.000 (*)
+NR                 2.000 (*)
+RL                 0.000 (*)
+RS                 3.000m   
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TBV1               0.000 (*)
+TBV2               0.000 (*)
+TIKF               0.000 (*)
+TRS1               0.000 (*)
+TRS2               0.000 (*)
+TT                 1.230n   
+VJ               540.000m   
+XTI                3.000    
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:       SIGNAL   
+A                  1.000 (*)
+DC               700.000m   
+F                465.000K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage 
+1           700.000m  2           547.820m 
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                 D1
+Using model:          KD219A
+
+Capacitance Terms:
+CAP                  70.851p
+
+Current Terms:
+ID                   10.956u
+
+Resistance Terms:
+REQ                   2.630K
+
+Voltage Terms:
+VD                  152.180m
+
+Power DC Terms:
+PD                    1.667u
+PS                    0.000 
+
+DC Pin Currents:
+Id                   10.956u
+
+Condition:
+State                    OFF
+
+Device Variables:
+area                  1.000 
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1           V1.RS
+V                   -547.820m        -10.956n
+Power DC Terms:
+PD                     6.002u        120.043f
+
+DC Pin Currents:
+Ir                   -10.956u        -10.956u
+
+Device Variables:
+tc1                    0.000           0.000 
+tc2                    0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1
+V                    547.820m
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:           SIGNAL
+V                    700.000m
+Power DC Terms:
+PG                     7.669u
+
+DC Pin Currents:
+ISource              -10.956u
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                   V1.DC=.8                    ***
+*****************************************************
+
+Temperature=27 V1.DC=.8
+
+Model parameters for devices of type Diode
+==========================================
+Instance:              D1   
+Using model:       KD219A   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BV                15.000    
+CJO               63.100p   
+EG                 1.110    
+FC               500.000m   
+IBV               10.000p   
+IBVL               0.000 (*)
+IKF                0.000 (*)
+IS                57.600n   
+ISR                0.000 (*)
+KF                 0.000 (*)
+M                330.000m   
+N                  1.120    
+NBV                1.000 (*)
+NBVL               1.000 (*)
+NR                 2.000 (*)
+RL                 0.000 (*)
+RS                 3.000m   
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TBV1               0.000 (*)
+TBV2               0.000 (*)
+TIKF               0.000 (*)
+TRS1               0.000 (*)
+TRS2               0.000 (*)
+TT                 1.230n   
+VJ               540.000m   
+XTI                3.000    
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:       SIGNAL   
+A                  1.000 (*)
+DC               800.000m   
+F                465.000K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage 
+1           800.000m  2           643.193m 
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                 D1
+Using model:          KD219A
+
+Capacitance Terms:
+CAP                  71.212p
+
+Current Terms:
+ID                   12.864u
+
+Resistance Terms:
+REQ                   2.242K
+
+Voltage Terms:
+VD                  156.807m
+
+Power DC Terms:
+PD                    2.017u
+PS                    0.000 
+
+DC Pin Currents:
+Id                   12.864u
+
+Condition:
+State                    OFF
+
+Device Variables:
+area                  1.000 
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1           V1.RS
+V                   -643.193m        -12.864n
+Power DC Terms:
+PD                     8.274u        165.479f
+
+DC Pin Currents:
+Ir                   -12.864u        -12.864u
+
+Device Variables:
+tc1                    0.000           0.000 
+tc2                    0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1
+V                    643.193m
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:           SIGNAL
+V                    800.000m
+Power DC Terms:
+PG                    10.291u
+
+DC Pin Currents:
+ISource              -12.864u
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                   V1.DC=.9                    ***
+*****************************************************
+
+Temperature=27 V1.DC=.9
+
+Model parameters for devices of type Diode
+==========================================
+Instance:              D1   
+Using model:       KD219A   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BV                15.000    
+CJO               63.100p   
+EG                 1.110    
+FC               500.000m   
+IBV               10.000p   
+IBVL               0.000 (*)
+IKF                0.000 (*)
+IS                57.600n   
+ISR                0.000 (*)
+KF                 0.000 (*)
+M                330.000m   
+N                  1.120    
+NBV                1.000 (*)
+NBVL               1.000 (*)
+NR                 2.000 (*)
+RL                 0.000 (*)
+RS                 3.000m   
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TBV1               0.000 (*)
+TBV2               0.000 (*)
+TIKF               0.000 (*)
+TRS1               0.000 (*)
+TRS2               0.000 (*)
+TT                 1.230n   
+VJ               540.000m   
+XTI                3.000    
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:       SIGNAL   
+A                  1.000 (*)
+DC               900.000m   
+F                465.000K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage 
+1           900.000m  2           739.181m 
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                 D1
+Using model:          KD219A
+
+Capacitance Terms:
+CAP                  71.539p
+
+Current Terms:
+ID                   14.784u
+
+Resistance Terms:
+REQ                   1.952K
+
+Voltage Terms:
+VD                  160.819m
+
+Power DC Terms:
+PD                    2.377u
+PS                    0.000 
+
+DC Pin Currents:
+Id                   14.784u
+
+Condition:
+State                    OFF
+
+Device Variables:
+area                  1.000 
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1           V1.RS
+V                   -739.181m        -14.784n
+Power DC Terms:
+PD                    10.928u        218.555f
+
+DC Pin Currents:
+Ir                   -14.784u        -14.784u
+
+Device Variables:
+tc1                    0.000           0.000 
+tc2                    0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1
+V                    739.181m
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:           SIGNAL
+V                    900.000m
+Power DC Terms:
+PG                    13.305u
+
+DC Pin Currents:
+ISource              -14.784u
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    V1.DC=1                    ***
+*****************************************************
+
+Temperature=27 V1.DC=1
+
+Model parameters for devices of type Diode
+==========================================
+Instance:              D1   
+Using model:       KD219A   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BV                15.000    
+CJO               63.100p   
+EG                 1.110    
+FC               500.000m   
+IBV               10.000p   
+IBVL               0.000 (*)
+IKF                0.000 (*)
+IS                57.600n   
+ISR                0.000 (*)
+KF                 0.000 (*)
+M                330.000m   
+N                  1.120    
+NBV                1.000 (*)
+NBVL               1.000 (*)
+NR                 2.000 (*)
+RL                 0.000 (*)
+RS                 3.000m   
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TBV1               0.000 (*)
+TBV2               0.000 (*)
+TIKF               0.000 (*)
+TRS1               0.000 (*)
+TRS2               0.000 (*)
+TT                 1.230n   
+VJ               540.000m   
+XTI                3.000    
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:       SIGNAL   
+A                  1.000 (*)
+DC                 1.000    
+F                465.000K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage 
+1             1.000   2           835.641m 
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                 D1
+Using model:          KD219A
+
+Capacitance Terms:
+CAP                  71.841p
+
+Current Terms:
+ID                   16.713u
+
+Resistance Terms:
+REQ                   1.727K
+
+Voltage Terms:
+VD                  164.359m
+
+Power DC Terms:
+PD                    2.747u
+PS                    0.000 
+
+DC Pin Currents:
+Id                   16.713u
+
+Condition:
+State                    OFF
+
+Device Variables:
+area                  1.000 
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1           V1.RS
+V                   -835.641m        -16.713n
+Power DC Terms:
+PD                    13.966u        279.318f
+
+DC Pin Currents:
+Ir                   -16.713u        -16.713u
+
+Device Variables:
+tc1                    0.000           0.000 
+tc2                    0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1
+V                    835.641m
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:           SIGNAL
+V                      1.000 
+Power DC Terms:
+PG                    16.713u
+
+DC Pin Currents:
+ISource              -16.713u
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                   V1.DC=1.1                   ***
+*****************************************************
+
+Temperature=27 V1.DC=1.1
+
+Model parameters for devices of type Diode
+==========================================
+Instance:              D1   
+Using model:       KD219A   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BV                15.000    
+CJO               63.100p   
+EG                 1.110    
+FC               500.000m   
+IBV               10.000p   
+IBVL               0.000 (*)
+IKF                0.000 (*)
+IS                57.600n   
+ISR                0.000 (*)
+KF                 0.000 (*)
+M                330.000m   
+N                  1.120    
+NBV                1.000 (*)
+NBVL               1.000 (*)
+NR                 2.000 (*)
+RL                 0.000 (*)
+RS                 3.000m   
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TBV1               0.000 (*)
+TBV2               0.000 (*)
+TIKF               0.000 (*)
+TRS1               0.000 (*)
+TRS2               0.000 (*)
+TT                 1.230n   
+VJ               540.000m   
+XTI                3.000    
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:       SIGNAL   
+A                  1.000 (*)
+DC                 1.100    
+F                465.000K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage 
+1             1.100   2           932.475m 
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                 D1
+Using model:          KD219A
+
+Capacitance Terms:
+CAP                  72.122p
+
+Current Terms:
+ID                   18.649u
+
+Resistance Terms:
+REQ                   1.548K
+
+Voltage Terms:
+VD                  167.525m
+
+Power DC Terms:
+PD                    3.124u
+PS                    0.000 
+
+DC Pin Currents:
+Id                   18.649u
+
+Condition:
+State                    OFF
+
+Device Variables:
+area                  1.000 
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1           V1.RS
+V                   -932.475m        -18.649n
+Power DC Terms:
+PD                    17.390u        347.804f
+
+DC Pin Currents:
+Ir                   -18.649u        -18.649u
+
+Device Variables:
+tc1                    0.000           0.000 
+tc2                    0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1
+V                    932.475m
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:           SIGNAL
+V                      1.100 
+Power DC Terms:
+PG                    20.514u
+
+DC Pin Currents:
+ISource              -18.649u
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                   V1.DC=1.2                   ***
+*****************************************************
+
+Temperature=27 V1.DC=1.2
+
+Model parameters for devices of type Diode
+==========================================
+Instance:              D1   
+Using model:       KD219A   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BV                15.000    
+CJO               63.100p   
+EG                 1.110    
+FC               500.000m   
+IBV               10.000p   
+IBVL               0.000 (*)
+IKF                0.000 (*)
+IS                57.600n   
+ISR                0.000 (*)
+KF                 0.000 (*)
+M                330.000m   
+N                  1.120    
+NBV                1.000 (*)
+NBVL               1.000 (*)
+NR                 2.000 (*)
+RL                 0.000 (*)
+RS                 3.000m   
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TBV1               0.000 (*)
+TBV2               0.000 (*)
+TIKF               0.000 (*)
+TRS1               0.000 (*)
+TRS2               0.000 (*)
+TT                 1.230n   
+VJ               540.000m   
+XTI                3.000    
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:       SIGNAL   
+A                  1.000 (*)
+DC                 1.200    
+F                465.000K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage 
+1             1.200   2             1.030  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                 D1
+Using model:          KD219A
+
+Capacitance Terms:
+CAP                  72.386p
+
+Current Terms:
+ID                   20.592u
+
+Resistance Terms:
+REQ                   1.403K
+
+Voltage Terms:
+VD                  170.387m
+
+Power DC Terms:
+PD                    3.509u
+PS                    0.000 
+
+DC Pin Currents:
+Id                   20.592u
+
+Condition:
+State                    OFF
+
+Device Variables:
+area                  1.000 
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1           V1.RS
+V                     -1.030         -20.592n
+Power DC Terms:
+PD                    21.202u        424.041f
+
+DC Pin Currents:
+Ir                   -20.592u        -20.592u
+
+Device Variables:
+tc1                    0.000           0.000 
+tc2                    0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1
+V                      1.030 
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:           SIGNAL
+V                      1.200 
+Power DC Terms:
+PG                    24.711u
+
+DC Pin Currents:
+ISource              -20.592u
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                   V1.DC=1.3                   ***
+*****************************************************
+
+Temperature=27 V1.DC=1.3
+
+Model parameters for devices of type Diode
+==========================================
+Instance:              D1   
+Using model:       KD219A   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BV                15.000    
+CJO               63.100p   
+EG                 1.110    
+FC               500.000m   
+IBV               10.000p   
+IBVL               0.000 (*)
+IKF                0.000 (*)
+IS                57.600n   
+ISR                0.000 (*)
+KF                 0.000 (*)
+M                330.000m   
+N                  1.120    
+NBV                1.000 (*)
+NBVL               1.000 (*)
+NR                 2.000 (*)
+RL                 0.000 (*)
+RS                 3.000m   
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TBV1               0.000 (*)
+TBV2               0.000 (*)
+TIKF               0.000 (*)
+TRS1               0.000 (*)
+TRS2               0.000 (*)
+TT                 1.230n   
+VJ               540.000m   
+XTI                3.000    
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:       SIGNAL   
+A                  1.000 (*)
+DC                 1.300    
+F                465.000K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage 
+1             1.300   2             1.127  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                 D1
+Using model:          KD219A
+
+Capacitance Terms:
+CAP                  72.636p
+
+Current Terms:
+ID                   22.540u
+
+Resistance Terms:
+REQ                   1.282K
+
+Voltage Terms:
+VD                  172.999m
+
+Power DC Terms:
+PD                    3.899u
+PS                    0.000 
+
+DC Pin Currents:
+Id                   22.540u
+
+Condition:
+State                    OFF
+
+Device Variables:
+area                  1.000 
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1           V1.RS
+V                     -1.127         -22.540n
+Power DC Terms:
+PD                    25.403u        508.053f
+
+DC Pin Currents:
+Ir                   -22.540u        -22.540u
+
+Device Variables:
+tc1                    0.000           0.000 
+tc2                    0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1
+V                      1.127 
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:           SIGNAL
+V                      1.300 
+Power DC Terms:
+PG                    29.302u
+
+DC Pin Currents:
+ISource              -22.540u
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                   V1.DC=1.4                   ***
+*****************************************************
+
+Temperature=27 V1.DC=1.4
+
+Model parameters for devices of type Diode
+==========================================
+Instance:              D1   
+Using model:       KD219A   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BV                15.000    
+CJO               63.100p   
+EG                 1.110    
+FC               500.000m   
+IBV               10.000p   
+IBVL               0.000 (*)
+IKF                0.000 (*)
+IS                57.600n   
+ISR                0.000 (*)
+KF                 0.000 (*)
+M                330.000m   
+N                  1.120    
+NBV                1.000 (*)
+NBVL               1.000 (*)
+NR                 2.000 (*)
+RL                 0.000 (*)
+RS                 3.000m   
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TBV1               0.000 (*)
+TBV2               0.000 (*)
+TIKF               0.000 (*)
+TRS1               0.000 (*)
+TRS2               0.000 (*)
+TT                 1.230n   
+VJ               540.000m   
+XTI                3.000    
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:       SIGNAL   
+A                  1.000 (*)
+DC                 1.400    
+F                465.000K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage 
+1             1.400   2             1.225  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                 D1
+Using model:          KD219A
+
+Capacitance Terms:
+CAP                  72.875p
+
+Current Terms:
+ID                   24.492u
+
+Resistance Terms:
+REQ                   1.180K
+
+Voltage Terms:
+VD                  175.399m
+
+Power DC Terms:
+PD                    4.296u
+PS                    0.000 
+
+DC Pin Currents:
+Id                   24.492u
+
+Condition:
+State                    OFF
+
+Device Variables:
+area                  1.000 
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1           V1.RS
+V                     -1.225         -24.492n
+Power DC Terms:
+PD                    29.993u        599.859f
+
+DC Pin Currents:
+Ir                   -24.492u        -24.492u
+
+Device Variables:
+tc1                    0.000           0.000 
+tc2                    0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1
+V                      1.225 
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:           SIGNAL
+V                      1.400 
+Power DC Terms:
+PG                    34.289u
+
+DC Pin Currents:
+ISource              -24.492u
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                   V1.DC=1.5                   ***
+*****************************************************
+
+Temperature=27 V1.DC=1.5
+
+Model parameters for devices of type Diode
+==========================================
+Instance:              D1   
+Using model:       KD219A   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BV                15.000    
+CJO               63.100p   
+EG                 1.110    
+FC               500.000m   
+IBV               10.000p   
+IBVL               0.000 (*)
+IKF                0.000 (*)
+IS                57.600n   
+ISR                0.000 (*)
+KF                 0.000 (*)
+M                330.000m   
+N                  1.120    
+NBV                1.000 (*)
+NBVL               1.000 (*)
+NR                 2.000 (*)
+RL                 0.000 (*)
+RS                 3.000m   
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TBV1               0.000 (*)
+TBV2               0.000 (*)
+TIKF               0.000 (*)
+TRS1               0.000 (*)
+TRS2               0.000 (*)
+TT                 1.230n   
+VJ               540.000m   
+XTI                3.000    
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:       SIGNAL   
+A                  1.000 (*)
+DC                 1.500    
+F                465.000K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage 
+1             1.500   2             1.322  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                 D1
+Using model:          KD219A
+
+Capacitance Terms:
+CAP                  73.103p
+
+Current Terms:
+ID                   26.448u
+
+Resistance Terms:
+REQ                   1.093K
+
+Voltage Terms:
+VD                  177.619m
+
+Power DC Terms:
+PD                    4.698u
+PS                    0.000 
+
+DC Pin Currents:
+Id                   26.448u
+
+Condition:
+State                    OFF
+
+Device Variables:
+area                  1.000 
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1           V1.RS
+V                     -1.322         -26.448n
+Power DC Terms:
+PD                    34.974u        699.477f
+
+DC Pin Currents:
+Ir                   -26.448u        -26.448u
+
+Device Variables:
+tc1                    0.000           0.000 
+tc2                    0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1
+V                      1.322 
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:           SIGNAL
+V                      1.500 
+Power DC Terms:
+PG                    39.671u
+
+DC Pin Currents:
+ISource              -26.448u
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                   V1.DC=1.6                   ***
+*****************************************************
+
+Temperature=27 V1.DC=1.6
+
+Model parameters for devices of type Diode
+==========================================
+Instance:              D1   
+Using model:       KD219A   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BV                15.000    
+CJO               63.100p   
+EG                 1.110    
+FC               500.000m   
+IBV               10.000p   
+IBVL               0.000 (*)
+IKF                0.000 (*)
+IS                57.600n   
+ISR                0.000 (*)
+KF                 0.000 (*)
+M                330.000m   
+N                  1.120    
+NBV                1.000 (*)
+NBVL               1.000 (*)
+NR                 2.000 (*)
+RL                 0.000 (*)
+RS                 3.000m   
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TBV1               0.000 (*)
+TBV2               0.000 (*)
+TIKF               0.000 (*)
+TRS1               0.000 (*)
+TRS2               0.000 (*)
+TT                 1.230n   
+VJ               540.000m   
+XTI                3.000    
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:       SIGNAL   
+A                  1.000 (*)
+DC                 1.600    
+F                465.000K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage 
+1             1.600   2             1.420  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                 D1
+Using model:          KD219A
+
+Capacitance Terms:
+CAP                  73.322p
+
+Current Terms:
+ID                   28.406u
+
+Resistance Terms:
+REQ                   1.018K
+
+Voltage Terms:
+VD                  179.684m
+
+Power DC Terms:
+PD                    5.104u
+PS                    0.000 
+
+DC Pin Currents:
+Id                   28.406u
+
+Condition:
+State                    OFF
+
+Device Variables:
+area                  1.000 
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1           V1.RS
+V                     -1.420         -28.406n
+Power DC Terms:
+PD                    40.346u        806.919f
+
+DC Pin Currents:
+Ir                   -28.406u        -28.406u
+
+Device Variables:
+tc1                    0.000           0.000 
+tc2                    0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1
+V                      1.420 
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:           SIGNAL
+V                      1.600 
+Power DC Terms:
+PG                    45.450u
+
+DC Pin Currents:
+ISource              -28.406u
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                   V1.DC=1.7                   ***
+*****************************************************
+
+Temperature=27 V1.DC=1.7
+
+Model parameters for devices of type Diode
+==========================================
+Instance:              D1   
+Using model:       KD219A   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BV                15.000    
+CJO               63.100p   
+EG                 1.110    
+FC               500.000m   
+IBV               10.000p   
+IBVL               0.000 (*)
+IKF                0.000 (*)
+IS                57.600n   
+ISR                0.000 (*)
+KF                 0.000 (*)
+M                330.000m   
+N                  1.120    
+NBV                1.000 (*)
+NBVL               1.000 (*)
+NR                 2.000 (*)
+RL                 0.000 (*)
+RS                 3.000m   
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TBV1               0.000 (*)
+TBV2               0.000 (*)
+TIKF               0.000 (*)
+TRS1               0.000 (*)
+TRS2               0.000 (*)
+TT                 1.230n   
+VJ               540.000m   
+XTI                3.000    
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:       SIGNAL   
+A                  1.000 (*)
+DC                 1.700    
+F                465.000K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage 
+1             1.700   2             1.518  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                 D1
+Using model:          KD219A
+
+Capacitance Terms:
+CAP                  73.533p
+
+Current Terms:
+ID                   30.368u
+
+Resistance Terms:
+REQ                 952.098 
+
+Voltage Terms:
+VD                  181.614m
+
+Power DC Terms:
+PD                    5.515u
+PS                    0.000 
+
+DC Pin Currents:
+Id                   30.368u
+
+Condition:
+State                    OFF
+
+Device Variables:
+area                  1.000 
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1           V1.RS
+V                     -1.518         -30.368n
+Power DC Terms:
+PD                    46.110u        922.198f
+
+DC Pin Currents:
+Ir                   -30.368u        -30.368u
+
+Device Variables:
+tc1                    0.000           0.000 
+tc2                    0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1
+V                      1.518 
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:           SIGNAL
+V                      1.700 
+Power DC Terms:
+PG                    51.625u
+
+DC Pin Currents:
+ISource              -30.368u
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                   V1.DC=1.8                   ***
+*****************************************************
+
+Temperature=27 V1.DC=1.8
+
+Model parameters for devices of type Diode
+==========================================
+Instance:              D1   
+Using model:       KD219A   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BV                15.000    
+CJO               63.100p   
+EG                 1.110    
+FC               500.000m   
+IBV               10.000p   
+IBVL               0.000 (*)
+IKF                0.000 (*)
+IS                57.600n   
+ISR                0.000 (*)
+KF                 0.000 (*)
+M                330.000m   
+N                  1.120    
+NBV                1.000 (*)
+NBVL               1.000 (*)
+NR                 2.000 (*)
+RL                 0.000 (*)
+RS                 3.000m   
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TBV1               0.000 (*)
+TBV2               0.000 (*)
+TIKF               0.000 (*)
+TRS1               0.000 (*)
+TRS2               0.000 (*)
+TT                 1.230n   
+VJ               540.000m   
+XTI                3.000    
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:       SIGNAL   
+A                  1.000 (*)
+DC                 1.800    
+F                465.000K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage 
+1             1.800   2             1.617  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                 D1
+Using model:          KD219A
+
+Capacitance Terms:
+CAP                  73.737p
+
+Current Terms:
+ID                   32.331u
+
+Resistance Terms:
+REQ                 894.372 
+
+Voltage Terms:
+VD                  183.426m
+
+Power DC Terms:
+PD                    5.930u
+PS                    0.000 
+
+DC Pin Currents:
+Id                   32.331u
+
+Condition:
+State                    OFF
+
+Device Variables:
+area                  1.000 
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1           V1.RS
+V                     -1.617         -32.331n
+Power DC Terms:
+PD                    52.266u          1.045p
+
+DC Pin Currents:
+Ir                   -32.331u        -32.331u
+
+Device Variables:
+tc1                    0.000           0.000 
+tc2                    0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1
+V                      1.617 
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:           SIGNAL
+V                      1.800 
+Power DC Terms:
+PG                    58.197u
+
+DC Pin Currents:
+ISource              -32.331u
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                   V1.DC=1.9                   ***
+*****************************************************
+
+Temperature=27 V1.DC=1.9
+
+Model parameters for devices of type Diode
+==========================================
+Instance:              D1   
+Using model:       KD219A   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BV                15.000    
+CJO               63.100p   
+EG                 1.110    
+FC               500.000m   
+IBV               10.000p   
+IBVL               0.000 (*)
+IKF                0.000 (*)
+IS                57.600n   
+ISR                0.000 (*)
+KF                 0.000 (*)
+M                330.000m   
+N                  1.120    
+NBV                1.000 (*)
+NBVL               1.000 (*)
+NR                 2.000 (*)
+RL                 0.000 (*)
+RS                 3.000m   
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TBV1               0.000 (*)
+TBV2               0.000 (*)
+TIKF               0.000 (*)
+TRS1               0.000 (*)
+TRS2               0.000 (*)
+TT                 1.230n   
+VJ               540.000m   
+XTI                3.000    
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:       SIGNAL   
+A                  1.000 (*)
+DC                 1.900    
+F                465.000K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage 
+1             1.900   2             1.715  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                 D1
+Using model:          KD219A
+
+Capacitance Terms:
+CAP                  73.935p
+
+Current Terms:
+ID                   34.297u
+
+Resistance Terms:
+REQ                 843.194 
+
+Voltage Terms:
+VD                  185.133m
+
+Power DC Terms:
+PD                    6.350u
+PS                    0.000 
+
+DC Pin Currents:
+Id                   34.297u
+
+Condition:
+State                    OFF
+
+Device Variables:
+area                  1.000 
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1           V1.RS
+V                     -1.715         -34.297n
+Power DC Terms:
+PD                    58.815u          1.176p
+
+DC Pin Currents:
+Ir                   -34.297u        -34.297u
+
+Device Variables:
+tc1                    0.000           0.000 
+tc2                    0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1
+V                      1.715 
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:           SIGNAL
+V                      1.900 
+Power DC Terms:
+PG                    65.165u
+
+DC Pin Currents:
+ISource              -34.297u
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    V1.DC=2                    ***
+*****************************************************
+
+Temperature=27 V1.DC=2
+
+Model parameters for devices of type Diode
+==========================================
+Instance:              D1   
+Using model:       KD219A   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BV                15.000    
+CJO               63.100p   
+EG                 1.110    
+FC               500.000m   
+IBV               10.000p   
+IBVL               0.000 (*)
+IKF                0.000 (*)
+IS                57.600n   
+ISR                0.000 (*)
+KF                 0.000 (*)
+M                330.000m   
+N                  1.120    
+NBV                1.000 (*)
+NBVL               1.000 (*)
+NR                 2.000 (*)
+RL                 0.000 (*)
+RS                 3.000m   
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TBV1               0.000 (*)
+TBV2               0.000 (*)
+TIKF               0.000 (*)
+TRS1               0.000 (*)
+TRS2               0.000 (*)
+TT                 1.230n   
+VJ               540.000m   
+XTI                3.000    
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:       SIGNAL   
+A                  1.000 (*)
+DC                 2.000    
+F                465.000K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage 
+1             2.000   2             1.813  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                 D1
+Using model:          KD219A
+
+Capacitance Terms:
+CAP                  74.128p
+
+Current Terms:
+ID                   36.265u
+
+Resistance Terms:
+REQ                 797.515 
+
+Voltage Terms:
+VD                  186.747m
+
+Power DC Terms:
+PD                    6.772u
+PS                    0.000 
+
+DC Pin Currents:
+Id                   36.265u
+
+Condition:
+State                    OFF
+
+Device Variables:
+area                  1.000 
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1           V1.RS
+V                     -1.813         -36.265n
+Power DC Terms:
+PD                    65.758u          1.315p
+
+DC Pin Currents:
+Ir                   -36.265u        -36.265u
+
+Device Variables:
+tc1                    0.000           0.000 
+tc2                    0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1
+V                      1.813 
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:           SIGNAL
+V                      2.000 
+Power DC Terms:
+PG                    72.530u
+
+DC Pin Currents:
+ISource              -36.265u
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                   V1.DC=2.1                   ***
+*****************************************************
+
+Temperature=27 V1.DC=2.1
+
+Model parameters for devices of type Diode
+==========================================
+Instance:              D1   
+Using model:       KD219A   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BV                15.000    
+CJO               63.100p   
+EG                 1.110    
+FC               500.000m   
+IBV               10.000p   
+IBVL               0.000 (*)
+IKF                0.000 (*)
+IS                57.600n   
+ISR                0.000 (*)
+KF                 0.000 (*)
+M                330.000m   
+N                  1.120    
+NBV                1.000 (*)
+NBVL               1.000 (*)
+NR                 2.000 (*)
+RL                 0.000 (*)
+RS                 3.000m   
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TBV1               0.000 (*)
+TBV2               0.000 (*)
+TIKF               0.000 (*)
+TRS1               0.000 (*)
+TRS2               0.000 (*)
+TT                 1.230n   
+VJ               540.000m   
+XTI                3.000    
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:       SIGNAL   
+A                  1.000 (*)
+DC                 2.100    
+F                465.000K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage 
+1             2.100   2             1.912  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                 D1
+Using model:          KD219A
+
+Capacitance Terms:
+CAP                  74.316p
+
+Current Terms:
+ID                   38.234u
+
+Resistance Terms:
+REQ                 756.498 
+
+Voltage Terms:
+VD                  188.276m
+
+Power DC Terms:
+PD                    7.199u
+PS                    0.000 
+
+DC Pin Currents:
+Id                   38.234u
+
+Condition:
+State                    OFF
+
+Device Variables:
+area                  1.000 
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1           V1.RS
+V                     -1.912         -38.234n
+Power DC Terms:
+PD                    73.094u          1.462p
+
+DC Pin Currents:
+Ir                   -38.234u        -38.234u
+
+Device Variables:
+tc1                    0.000           0.000 
+tc2                    0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1
+V                      1.912 
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:           SIGNAL
+V                      2.100 
+Power DC Terms:
+PG                    80.292u
+
+DC Pin Currents:
+ISource              -38.234u
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                   V1.DC=2.2                   ***
+*****************************************************
+
+Temperature=27 V1.DC=2.2
+
+Model parameters for devices of type Diode
+==========================================
+Instance:              D1   
+Using model:       KD219A   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BV                15.000    
+CJO               63.100p   
+EG                 1.110    
+FC               500.000m   
+IBV               10.000p   
+IBVL               0.000 (*)
+IKF                0.000 (*)
+IS                57.600n   
+ISR                0.000 (*)
+KF                 0.000 (*)
+M                330.000m   
+N                  1.120    
+NBV                1.000 (*)
+NBVL               1.000 (*)
+NR                 2.000 (*)
+RL                 0.000 (*)
+RS                 3.000m   
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TBV1               0.000 (*)
+TBV2               0.000 (*)
+TIKF               0.000 (*)
+TRS1               0.000 (*)
+TRS2               0.000 (*)
+TT                 1.230n   
+VJ               540.000m   
+XTI                3.000    
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:       SIGNAL   
+A                  1.000 (*)
+DC                 2.200    
+F                465.000K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage 
+1             2.200   2             2.010  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                 D1
+Using model:          KD219A
+
+Capacitance Terms:
+CAP                  74.499p
+
+Current Terms:
+ID                   40.205u
+
+Resistance Terms:
+REQ                 719.467 
+
+Voltage Terms:
+VD                  189.730m
+
+Power DC Terms:
+PD                    7.628u
+PS                    0.000 
+
+DC Pin Currents:
+Id                   40.205u
+
+Condition:
+State                    OFF
+
+Device Variables:
+area                  1.000 
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1           V1.RS
+V                     -2.010         -40.205n
+Power DC Terms:
+PD                    80.824u          1.616p
+
+DC Pin Currents:
+Ir                   -40.205u        -40.205u
+
+Device Variables:
+tc1                    0.000           0.000 
+tc2                    0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1
+V                      2.010 
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:           SIGNAL
+V                      2.200 
+Power DC Terms:
+PG                    88.452u
+
+DC Pin Currents:
+ISource              -40.205u
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                   V1.DC=2.3                   ***
+*****************************************************
+
+Temperature=27 V1.DC=2.3
+
+Model parameters for devices of type Diode
+==========================================
+Instance:              D1   
+Using model:       KD219A   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BV                15.000    
+CJO               63.100p   
+EG                 1.110    
+FC               500.000m   
+IBV               10.000p   
+IBVL               0.000 (*)
+IKF                0.000 (*)
+IS                57.600n   
+ISR                0.000 (*)
+KF                 0.000 (*)
+M                330.000m   
+N                  1.120    
+NBV                1.000 (*)
+NBVL               1.000 (*)
+NR                 2.000 (*)
+RL                 0.000 (*)
+RS                 3.000m   
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TBV1               0.000 (*)
+TBV2               0.000 (*)
+TIKF               0.000 (*)
+TRS1               0.000 (*)
+TRS2               0.000 (*)
+TT                 1.230n   
+VJ               540.000m   
+XTI                3.000    
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:       SIGNAL   
+A                  1.000 (*)
+DC                 2.300    
+F                465.000K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage 
+1             2.300   2             2.109  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                 D1
+Using model:          KD219A
+
+Capacitance Terms:
+CAP                  74.678p
+
+Current Terms:
+ID                   42.178u
+
+Resistance Terms:
+REQ                 685.869 
+
+Voltage Terms:
+VD                  191.115m
+
+Power DC Terms:
+PD                    8.061u
+PS                    0.000 
+
+DC Pin Currents:
+Id                   42.178u
+
+Condition:
+State                    OFF
+
+Device Variables:
+area                  1.000 
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1           V1.RS
+V                     -2.109         -42.178n
+Power DC Terms:
+PD                    88.948u          1.779p
+
+DC Pin Currents:
+Ir                   -42.178u        -42.178u
+
+Device Variables:
+tc1                    0.000           0.000 
+tc2                    0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1
+V                      2.109 
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:           SIGNAL
+V                      2.300 
+Power DC Terms:
+PG                    97.009u
+
+DC Pin Currents:
+ISource              -42.178u
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                   V1.DC=2.4                   ***
+*****************************************************
+
+Temperature=27 V1.DC=2.4
+
+Model parameters for devices of type Diode
+==========================================
+Instance:              D1   
+Using model:       KD219A   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BV                15.000    
+CJO               63.100p   
+EG                 1.110    
+FC               500.000m   
+IBV               10.000p   
+IBVL               0.000 (*)
+IKF                0.000 (*)
+IS                57.600n   
+ISR                0.000 (*)
+KF                 0.000 (*)
+M                330.000m   
+N                  1.120    
+NBV                1.000 (*)
+NBVL               1.000 (*)
+NR                 2.000 (*)
+RL                 0.000 (*)
+RS                 3.000m   
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TBV1               0.000 (*)
+TBV2               0.000 (*)
+TIKF               0.000 (*)
+TRS1               0.000 (*)
+TRS2               0.000 (*)
+TT                 1.230n   
+VJ               540.000m   
+XTI                3.000    
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:       SIGNAL   
+A                  1.000 (*)
+DC                 2.400    
+F                465.000K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage 
+1             2.400   2             2.208  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                 D1
+Using model:          KD219A
+
+Capacitance Terms:
+CAP                  74.853p
+
+Current Terms:
+ID                   44.151u
+
+Resistance Terms:
+REQ                 655.251 
+
+Voltage Terms:
+VD                  192.438m
+
+Power DC Terms:
+PD                    8.496u
+PS                    0.000 
+
+DC Pin Currents:
+Id                   44.151u
+
+Condition:
+State                    OFF
+
+Device Variables:
+area                  1.000 
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1           V1.RS
+V                     -2.208         -44.151n
+Power DC Terms:
+PD                    97.467u          1.949p
+
+DC Pin Currents:
+Ir                   -44.151u        -44.151u
+
+Device Variables:
+tc1                    0.000           0.000 
+tc2                    0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1
+V                      2.208 
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:           SIGNAL
+V                      2.400 
+Power DC Terms:
+PG                   105.963u
+
+DC Pin Currents:
+ISource              -44.151u
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                   V1.DC=2.5                   ***
+*****************************************************
+
+Temperature=27 V1.DC=2.5
+
+Model parameters for devices of type Diode
+==========================================
+Instance:              D1   
+Using model:       KD219A   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BV                15.000    
+CJO               63.100p   
+EG                 1.110    
+FC               500.000m   
+IBV               10.000p   
+IBVL               0.000 (*)
+IKF                0.000 (*)
+IS                57.600n   
+ISR                0.000 (*)
+KF                 0.000 (*)
+M                330.000m   
+N                  1.120    
+NBV                1.000 (*)
+NBVL               1.000 (*)
+NR                 2.000 (*)
+RL                 0.000 (*)
+RS                 3.000m   
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TBV1               0.000 (*)
+TBV2               0.000 (*)
+TIKF               0.000 (*)
+TRS1               0.000 (*)
+TRS2               0.000 (*)
+TT                 1.230n   
+VJ               540.000m   
+XTI                3.000    
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:       SIGNAL   
+A                  1.000 (*)
+DC                 2.500    
+F                465.000K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage 
+1             2.500   2             2.306  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                 D1
+Using model:          KD219A
+
+Capacitance Terms:
+CAP                  75.025p
+
+Current Terms:
+ID                   46.126u
+
+Resistance Terms:
+REQ                 627.234 
+
+Voltage Terms:
+VD                  193.704m
+
+Power DC Terms:
+PD                    8.935u
+PS                    0.000 
+
+DC Pin Currents:
+Id                   46.126u
+
+Condition:
+State                    OFF
+
+Device Variables:
+area                  1.000 
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1           V1.RS
+V                     -2.306         -46.126n
+Power DC Terms:
+PD                   106.380u          2.128p
+
+DC Pin Currents:
+Ir                   -46.126u        -46.126u
+
+Device Variables:
+tc1                    0.000           0.000 
+tc2                    0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1
+V                      2.306 
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:           SIGNAL
+V                      2.500 
+Power DC Terms:
+PG                   115.315u
+
+DC Pin Currents:
+ISource              -46.126u
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                   V1.DC=2.6                   ***
+*****************************************************
+
+Temperature=27 V1.DC=2.6
+
+Model parameters for devices of type Diode
+==========================================
+Instance:              D1   
+Using model:       KD219A   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BV                15.000    
+CJO               63.100p   
+EG                 1.110    
+FC               500.000m   
+IBV               10.000p   
+IBVL               0.000 (*)
+IKF                0.000 (*)
+IS                57.600n   
+ISR                0.000 (*)
+KF                 0.000 (*)
+M                330.000m   
+N                  1.120    
+NBV                1.000 (*)
+NBVL               1.000 (*)
+NR                 2.000 (*)
+RL                 0.000 (*)
+RS                 3.000m   
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TBV1               0.000 (*)
+TBV2               0.000 (*)
+TIKF               0.000 (*)
+TRS1               0.000 (*)
+TRS2               0.000 (*)
+TT                 1.230n   
+VJ               540.000m   
+XTI                3.000    
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:       SIGNAL   
+A                  1.000 (*)
+DC                 2.600    
+F                465.000K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage 
+1             2.600   2             2.405  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                 D1
+Using model:          KD219A
+
+Capacitance Terms:
+CAP                  75.193p
+
+Current Terms:
+ID                   48.102u
+
+Resistance Terms:
+REQ                 601.502 
+
+Voltage Terms:
+VD                  194.918m
+
+Power DC Terms:
+PD                    9.376u
+PS                    0.000 
+
+DC Pin Currents:
+Id                   48.102u
+
+Condition:
+State                    OFF
+
+Device Variables:
+area                  1.000 
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1           V1.RS
+V                     -2.405         -48.102n
+Power DC Terms:
+PD                   115.688u          2.314p
+
+DC Pin Currents:
+Ir                   -48.102u        -48.102u
+
+Device Variables:
+tc1                    0.000           0.000 
+tc2                    0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1
+V                      2.405 
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:           SIGNAL
+V                      2.600 
+Power DC Terms:
+PG                   125.064u
+
+DC Pin Currents:
+ISource              -48.102u
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                   V1.DC=2.7                   ***
+*****************************************************
+
+Temperature=27 V1.DC=2.7
+
+Model parameters for devices of type Diode
+==========================================
+Instance:              D1   
+Using model:       KD219A   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BV                15.000    
+CJO               63.100p   
+EG                 1.110    
+FC               500.000m   
+IBV               10.000p   
+IBVL               0.000 (*)
+IKF                0.000 (*)
+IS                57.600n   
+ISR                0.000 (*)
+KF                 0.000 (*)
+M                330.000m   
+N                  1.120    
+NBV                1.000 (*)
+NBVL               1.000 (*)
+NR                 2.000 (*)
+RL                 0.000 (*)
+RS                 3.000m   
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TBV1               0.000 (*)
+TBV2               0.000 (*)
+TIKF               0.000 (*)
+TRS1               0.000 (*)
+TRS2               0.000 (*)
+TT                 1.230n   
+VJ               540.000m   
+XTI                3.000    
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:       SIGNAL   
+A                  1.000 (*)
+DC                 2.700    
+F                465.000K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage 
+1             2.700   2             2.504  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                 D1
+Using model:          KD219A
+
+Capacitance Terms:
+CAP                  75.359p
+
+Current Terms:
+ID                   50.078u
+
+Resistance Terms:
+REQ                 577.787 
+
+Voltage Terms:
+VD                  196.083m
+
+Power DC Terms:
+PD                    9.820u
+PS                    0.000 
+
+DC Pin Currents:
+Id                   50.078u
+
+Condition:
+State                    OFF
+
+Device Variables:
+area                  1.000 
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1           V1.RS
+V                     -2.504         -50.078n
+Power DC Terms:
+PD                   125.392u          2.508p
+
+DC Pin Currents:
+Ir                   -50.078u        -50.078u
+
+Device Variables:
+tc1                    0.000           0.000 
+tc2                    0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1
+V                      2.504 
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:           SIGNAL
+V                      2.700 
+Power DC Terms:
+PG                   135.212u
+
+DC Pin Currents:
+ISource              -50.078u
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                   V1.DC=2.8                   ***
+*****************************************************
+
+Temperature=27 V1.DC=2.8
+
+Model parameters for devices of type Diode
+==========================================
+Instance:              D1   
+Using model:       KD219A   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BV                15.000    
+CJO               63.100p   
+EG                 1.110    
+FC               500.000m   
+IBV               10.000p   
+IBVL               0.000 (*)
+IKF                0.000 (*)
+IS                57.600n   
+ISR                0.000 (*)
+KF                 0.000 (*)
+M                330.000m   
+N                  1.120    
+NBV                1.000 (*)
+NBVL               1.000 (*)
+NR                 2.000 (*)
+RL                 0.000 (*)
+RS                 3.000m   
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TBV1               0.000 (*)
+TBV2               0.000 (*)
+TIKF               0.000 (*)
+TRS1               0.000 (*)
+TRS2               0.000 (*)
+TT                 1.230n   
+VJ               540.000m   
+XTI                3.000    
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:       SIGNAL   
+A                  1.000 (*)
+DC                 2.800    
+F                465.000K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage 
+1             2.800   2             2.603  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                 D1
+Using model:          KD219A
+
+Capacitance Terms:
+CAP                  75.522p
+
+Current Terms:
+ID                   52.056u
+
+Resistance Terms:
+REQ                 555.861 
+
+Voltage Terms:
+VD                  197.204m
+
+Power DC Terms:
+PD                   10.266u
+PS                    0.000 
+
+DC Pin Currents:
+Id                   52.056u
+
+Condition:
+State                    OFF
+
+Device Variables:
+area                  1.000 
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1           V1.RS
+V                     -2.603         -52.056n
+Power DC Terms:
+PD                   135.491u          2.710p
+
+DC Pin Currents:
+Ir                   -52.056u        -52.056u
+
+Device Variables:
+tc1                    0.000           0.000 
+tc2                    0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1
+V                      2.603 
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:           SIGNAL
+V                      2.800 
+Power DC Terms:
+PG                   145.757u
+
+DC Pin Currents:
+ISource              -52.056u
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                   V1.DC=2.9                   ***
+*****************************************************
+
+Temperature=27 V1.DC=2.9
+
+Model parameters for devices of type Diode
+==========================================
+Instance:              D1   
+Using model:       KD219A   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BV                15.000    
+CJO               63.100p   
+EG                 1.110    
+FC               500.000m   
+IBV               10.000p   
+IBVL               0.000 (*)
+IKF                0.000 (*)
+IS                57.600n   
+ISR                0.000 (*)
+KF                 0.000 (*)
+M                330.000m   
+N                  1.120    
+NBV                1.000 (*)
+NBVL               1.000 (*)
+NR                 2.000 (*)
+RL                 0.000 (*)
+RS                 3.000m   
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TBV1               0.000 (*)
+TBV2               0.000 (*)
+TIKF               0.000 (*)
+TRS1               0.000 (*)
+TRS2               0.000 (*)
+TT                 1.230n   
+VJ               540.000m   
+XTI                3.000    
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:       SIGNAL   
+A                  1.000 (*)
+DC                 2.900    
+F                465.000K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage 
+1             2.900   2             2.702  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                 D1
+Using model:          KD219A
+
+Capacitance Terms:
+CAP                  75.682p
+
+Current Terms:
+ID                   54.034u
+
+Resistance Terms:
+REQ                 535.531 
+
+Voltage Terms:
+VD                  198.283m
+
+Power DC Terms:
+PD                   10.714u
+PS                    0.000 
+
+DC Pin Currents:
+Id                   54.034u
+
+Condition:
+State                    OFF
+
+Device Variables:
+area                  1.000 
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1           V1.RS
+V                     -2.702         -54.034n
+Power DC Terms:
+PD                   145.985u          2.920p
+
+DC Pin Currents:
+Ir                   -54.034u        -54.034u
+
+Device Variables:
+tc1                    0.000           0.000 
+tc2                    0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1
+V                      2.702 
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:           SIGNAL
+V                      2.900 
+Power DC Terms:
+PG                   156.700u
+
+DC Pin Currents:
+ISource              -54.034u
+
+
+
+*****************************************************
+***                Temperature=27                 ***
+***                    V1.DC=3                    ***
+*****************************************************
+
+Temperature=27 V1.DC=3
+
+Model parameters for devices of type Diode
+==========================================
+Instance:              D1   
+Using model:       KD219A   
+LEVEL                   1(*)
+AF                 1.000 (*)
+BV                15.000    
+CJO               63.100p   
+EG                 1.110    
+FC               500.000m   
+IBV               10.000p   
+IBVL               0.000 (*)
+IKF                0.000 (*)
+IS                57.600n   
+ISR                0.000 (*)
+KF                 0.000 (*)
+M                330.000m   
+N                  1.120    
+NBV                1.000 (*)
+NBVL               1.000 (*)
+NR                 2.000 (*)
+RL                 0.000 (*)
+RS                 3.000m   
+T_ABS           UNDEFINED(*)
+T_MEASURED      UNDEFINED(*)
+T_REL_GLOBAL    UNDEFINED(*)
+T_REL_LOCAL     UNDEFINED(*)
+TBV1               0.000 (*)
+TBV2               0.000 (*)
+TIKF               0.000 (*)
+TRS1               0.000 (*)
+TRS2               0.000 (*)
+TT                 1.230n   
+VJ               540.000m   
+XTI                3.000    
+(*) Default Parameter
+
+
+
+Model parameters for devices of type Sine Source
+================================================
+Instance:              V1   
+Using model:       SIGNAL   
+A                  1.000 (*)
+DC                 3.000    
+F                465.000K   
+PH                 0.000 (*)
+RP                 0.000 (*)
+RS                 1.000m(*)
+TAU                0.000 (*)
+(*) Default Parameter
+
+
+
+DC Operating Point Voltages
+===========================
+Node         Voltage  Node         Voltage 
+1             3.000   2             2.801  
+
+
+Operating Point for Devices of Type Diode
+=========================================
+Instance:                 D1
+Using model:          KD219A
+
+Capacitance Terms:
+CAP                  75.840p
+
+Current Terms:
+ID                   56.014u
+
+Resistance Terms:
+REQ                 516.628 
+
+Voltage Terms:
+VD                  199.324m
+
+Power DC Terms:
+PD                   11.165u
+PS                    0.000 
+
+DC Pin Currents:
+Id                   56.014u
+
+Condition:
+State                    OFF
+
+Device Variables:
+area                  1.000 
+ic                    0.000 
+
+
+
+Operating Point for Devices of Type Resistor
+============================================
+Instance:                  R1           V1.RS
+V                     -2.801         -56.014n
+Power DC Terms:
+PD                   156.876u          3.138p
+
+DC Pin Currents:
+Ir                   -56.014u        -56.014u
+
+Device Variables:
+tc1                    0.000           0.000 
+tc2                    0.000           0.000 
+
+
+
+Operating Point for Devices of Type Capacitor
+=============================================
+Instance:                  C1
+V                      2.801 
+Power DC Terms:
+PS                     0.000 
+
+DC Pin Currents:
+Ic                     0.000 
+
+Device Variables:
+ic                     0.000 
+
+
+
+Operating Point for Devices of Type Sine Source
+===============================================
+Instance:                  V1
+Using model:           SIGNAL
+V                      3.000 
+Power DC Terms:
+PG                   168.041u
+
+DC Pin Currents:
+ISource              -56.014u
+
+
