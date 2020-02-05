@@ -1,0 +1,55 @@
+MPLINK 5.08, LINKER
+Linker Map File - Created Fri Sep 01 14:57:03 2017
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+             RESET_VECTOR       code   0x000000    program   0x000004
+                   .cinit    romdata   0x000004    program   0x000002
+            HI_INT_VECTOR       code   0x000008    program   0x000002
+           LOW_INT_VECTOR       code   0x000018    program   0x000002
+                    .code       code   0x00001a    program   0x00001c
+.config_300001_BUILD/DEFAULT/PRODUCTION/18F2520    romdata   0x300001    program   0x000001
+              DATA_EEPROM       code   0xf00000    program   0x000010
+               .udata_acs      udata   0x000000       data   0x000001
+                   .udata      udata   0x000080       data   0x000003
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000005      
+                            0x000008    0x000009      
+                            0x000018    0x000035      
+                            0x300001    0x300001      
+                            0xf00000    0xf0000f      
+            55 out of 33048 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                  HighInt   0x00001a    program     static D:\ProectMplabX_ForStud\StartForStud.X\18F2520TMPO.ASM
+                   LowInt   0x00001c    program     static D:\ProectMplabX_ForStud\StartForStud.X\18F2520TMPO.ASM
+                     Main   0x000036    program     static D:\ProectMplabX_ForStud\StartForStud.X\18F2520TMPO.ASM
+                 BSR_TEMP   0x000082       data     static D:\ProectMplabX_ForStud\StartForStud.X\18F2520TMPO.ASM
+                  EXAMPLE   0x000000       data     static D:\ProectMplabX_ForStud\StartForStud.X\18F2520TMPO.ASM
+              STATUS_TEMP   0x000081       data     static D:\ProectMplabX_ForStud\StartForStud.X\18F2520TMPO.ASM
+                WREG_TEMP   0x000080       data     static D:\ProectMplabX_ForStud\StartForStud.X\18F2520TMPO.ASM
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                  HighInt   0x00001a    program     static D:\ProectMplabX_ForStud\StartForStud.X\18F2520TMPO.ASM
+                   LowInt   0x00001c    program     static D:\ProectMplabX_ForStud\StartForStud.X\18F2520TMPO.ASM
+                     Main   0x000036    program     static D:\ProectMplabX_ForStud\StartForStud.X\18F2520TMPO.ASM
+                  EXAMPLE   0x000000       data     static D:\ProectMplabX_ForStud\StartForStud.X\18F2520TMPO.ASM
+                WREG_TEMP   0x000080       data     static D:\ProectMplabX_ForStud\StartForStud.X\18F2520TMPO.ASM
+              STATUS_TEMP   0x000081       data     static D:\ProectMplabX_ForStud\StartForStud.X\18F2520TMPO.ASM
+                 BSR_TEMP   0x000082       data     static D:\ProectMplabX_ForStud\StartForStud.X\18F2520TMPO.ASM
+
+

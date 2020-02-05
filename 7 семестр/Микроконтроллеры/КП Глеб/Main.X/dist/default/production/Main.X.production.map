@@ -1,0 +1,137 @@
+MPLINK 5.08, LINKER
+Linker Map File - Created Sun Dec 23 16:42:07 2018
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+             RESET_VECTOR       code   0x000000    program   0x000004
+                   .cinit    romdata   0x000004    program   0x000002
+            HI_INT_VECTOR       code   0x000008    program   0x000002
+           LOW_INT_VECTOR       code   0x000018    program   0x000002
+                    .code       code   0x00001a    program   0x00019c
+.config_300001_BUILD/DEFAULT/PRODUCTION/KP.O    romdata   0x300001    program   0x000001
+.config_300003_BUILD/DEFAULT/PRODUCTION/KP.O    romdata   0x300003    program   0x000001
+.config_300005_BUILD/DEFAULT/PRODUCTION/KP.O    romdata   0x300005    program   0x000001
+              DATA_EEPROM       code   0xf00000    program   0x000010
+               .udata_acs      udata   0x000000       data   0x000012
+                   .udata      udata   0x000080       data   0x000003
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000005      
+                            0x000008    0x000009      
+                            0x000018    0x0001b5      
+                            0x300001    0x300001      
+                            0x300003    0x300003      
+                            0x300005    0x300005      
+                            0xf00000    0xf0000f      
+            441 out of 33048 program addresses used, program memory utilization is 1%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                 CLRF_ALL   0x0000b2    program     static E:\Repository\university\Main.X\KP.ASM
+                     CONF   0x0000d6    program     static E:\Repository\university\Main.X\KP.ASM
+         FUNC_MUL_TO_0125   0x00017e    program     static E:\Repository\university\Main.X\KP.ASM
+          FUNC_MUL_TO_025   0x000162    program     static E:\Repository\university\Main.X\KP.ASM
+           FUNC_MUL_TO_05   0x00014e    program     static E:\Repository\university\Main.X\KP.ASM
+          FUNC_MUL_TO_075   0x0001a2    program     static E:\Repository\university\Main.X\KP.ASM
+                  HighInt   0x00001a    program     static E:\Repository\university\Main.X\KP.ASM
+                  K1_0125   0x000184    program     static E:\Repository\university\Main.X\KP.ASM
+                   K1_025   0x000168    program     static E:\Repository\university\Main.X\KP.ASM
+                    K1_05   0x000154    program     static E:\Repository\university\Main.X\KP.ASM
+                  K2_0125   0x000192    program     static E:\Repository\university\Main.X\KP.ASM
+                   K2_025   0x000172    program     static E:\Repository\university\Main.X\KP.ASM
+                    K2_05   0x00015a    program     static E:\Repository\university\Main.X\KP.ASM
+                  K3_0125   0x0001a0    program     static E:\Repository\university\Main.X\KP.ASM
+                   K3_025   0x00017c    program     static E:\Repository\university\Main.X\KP.ASM
+                    K3_05   0x000160    program     static E:\Repository\university\Main.X\KP.ASM
+                   LowInt   0x000052    program     static E:\Repository\university\Main.X\KP.ASM
+                       M1   0x000076    program     static E:\Repository\university\Main.X\KP.ASM
+                       M2   0x000086    program     static E:\Repository\university\Main.X\KP.ASM
+                       M3   0x0000aa    program     static E:\Repository\university\Main.X\KP.ASM
+                MAIN_FUNC   0x000108    program     static E:\Repository\university\Main.X\KP.ASM
+                     Main   0x00006c    program     static E:\Repository\university\Main.X\KP.ASM
+                    Mint1   0x000026    program     static E:\Repository\university\Main.X\KP.ASM
+                    Mint2   0x000032    program     static E:\Repository\university\Main.X\KP.ASM
+                    Mint3   0x000038    program     static E:\Repository\university\Main.X\KP.ASM
+                 BSR_TEMP   0x000082       data     static E:\Repository\university\Main.X\KP.ASM
+                  EXAMPLE   0x000000       data     static E:\Repository\university\Main.X\KP.ASM
+          NUM_TO_MUL_0125   0x000003       data     static E:\Repository\university\Main.X\KP.ASM
+           NUM_TO_MUL_025   0x000002       data     static E:\Repository\university\Main.X\KP.ASM
+            NUM_TO_MUL_05   0x000001       data     static E:\Repository\university\Main.X\KP.ASM
+           NUM_TO_MUL_075   0x000004       data     static E:\Repository\university\Main.X\KP.ASM
+      NUM_TO_MUL_075_COPY   0x000005       data     static E:\Repository\university\Main.X\KP.ASM
+                      Num   0x000007       data     static E:\Repository\university\Main.X\KP.ASM
+                     NumA   0x000008       data     static E:\Repository\university\Main.X\KP.ASM
+                 NumA_RES   0x00000d       data     static E:\Repository\university\Main.X\KP.ASM
+                NumA_prev   0x000009       data     static E:\Repository\university\Main.X\KP.ASM
+            NumA_prev_RES   0x00000e       data     static E:\Repository\university\Main.X\KP.ASM
+                     NumB   0x00000a       data     static E:\Repository\university\Main.X\KP.ASM
+                NumB_prev   0x00000b       data     static E:\Repository\university\Main.X\KP.ASM
+               NumB_prev2   0x00000c       data     static E:\Repository\university\Main.X\KP.ASM
+           NumB_prev2_RES   0x000010       data     static E:\Repository\university\Main.X\KP.ASM
+            NumB_prev_RES   0x00000f       data     static E:\Repository\university\Main.X\KP.ASM
+              Num_HighInt   0x000006       data     static E:\Repository\university\Main.X\KP.ASM
+              STATUS_TEMP   0x000081       data     static E:\Repository\university\Main.X\KP.ASM
+                    TMP_V   0x000011       data     static E:\Repository\university\Main.X\KP.ASM
+                WREG_TEMP   0x000080       data     static E:\Repository\university\Main.X\KP.ASM
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                  HighInt   0x00001a    program     static E:\Repository\university\Main.X\KP.ASM
+                    Mint1   0x000026    program     static E:\Repository\university\Main.X\KP.ASM
+                    Mint2   0x000032    program     static E:\Repository\university\Main.X\KP.ASM
+                    Mint3   0x000038    program     static E:\Repository\university\Main.X\KP.ASM
+                   LowInt   0x000052    program     static E:\Repository\university\Main.X\KP.ASM
+                     Main   0x00006c    program     static E:\Repository\university\Main.X\KP.ASM
+                       M1   0x000076    program     static E:\Repository\university\Main.X\KP.ASM
+                       M2   0x000086    program     static E:\Repository\university\Main.X\KP.ASM
+                       M3   0x0000aa    program     static E:\Repository\university\Main.X\KP.ASM
+                 CLRF_ALL   0x0000b2    program     static E:\Repository\university\Main.X\KP.ASM
+                     CONF   0x0000d6    program     static E:\Repository\university\Main.X\KP.ASM
+                MAIN_FUNC   0x000108    program     static E:\Repository\university\Main.X\KP.ASM
+           FUNC_MUL_TO_05   0x00014e    program     static E:\Repository\university\Main.X\KP.ASM
+                    K1_05   0x000154    program     static E:\Repository\university\Main.X\KP.ASM
+                    K2_05   0x00015a    program     static E:\Repository\university\Main.X\KP.ASM
+                    K3_05   0x000160    program     static E:\Repository\university\Main.X\KP.ASM
+          FUNC_MUL_TO_025   0x000162    program     static E:\Repository\university\Main.X\KP.ASM
+                   K1_025   0x000168    program     static E:\Repository\university\Main.X\KP.ASM
+                   K2_025   0x000172    program     static E:\Repository\university\Main.X\KP.ASM
+                   K3_025   0x00017c    program     static E:\Repository\university\Main.X\KP.ASM
+         FUNC_MUL_TO_0125   0x00017e    program     static E:\Repository\university\Main.X\KP.ASM
+                  K1_0125   0x000184    program     static E:\Repository\university\Main.X\KP.ASM
+                  K2_0125   0x000192    program     static E:\Repository\university\Main.X\KP.ASM
+                  K3_0125   0x0001a0    program     static E:\Repository\university\Main.X\KP.ASM
+          FUNC_MUL_TO_075   0x0001a2    program     static E:\Repository\university\Main.X\KP.ASM
+                  EXAMPLE   0x000000       data     static E:\Repository\university\Main.X\KP.ASM
+            NUM_TO_MUL_05   0x000001       data     static E:\Repository\university\Main.X\KP.ASM
+           NUM_TO_MUL_025   0x000002       data     static E:\Repository\university\Main.X\KP.ASM
+          NUM_TO_MUL_0125   0x000003       data     static E:\Repository\university\Main.X\KP.ASM
+           NUM_TO_MUL_075   0x000004       data     static E:\Repository\university\Main.X\KP.ASM
+      NUM_TO_MUL_075_COPY   0x000005       data     static E:\Repository\university\Main.X\KP.ASM
+              Num_HighInt   0x000006       data     static E:\Repository\university\Main.X\KP.ASM
+                      Num   0x000007       data     static E:\Repository\university\Main.X\KP.ASM
+                     NumA   0x000008       data     static E:\Repository\university\Main.X\KP.ASM
+                NumA_prev   0x000009       data     static E:\Repository\university\Main.X\KP.ASM
+                     NumB   0x00000a       data     static E:\Repository\university\Main.X\KP.ASM
+                NumB_prev   0x00000b       data     static E:\Repository\university\Main.X\KP.ASM
+               NumB_prev2   0x00000c       data     static E:\Repository\university\Main.X\KP.ASM
+                 NumA_RES   0x00000d       data     static E:\Repository\university\Main.X\KP.ASM
+            NumA_prev_RES   0x00000e       data     static E:\Repository\university\Main.X\KP.ASM
+            NumB_prev_RES   0x00000f       data     static E:\Repository\university\Main.X\KP.ASM
+           NumB_prev2_RES   0x000010       data     static E:\Repository\university\Main.X\KP.ASM
+                    TMP_V   0x000011       data     static E:\Repository\university\Main.X\KP.ASM
+                WREG_TEMP   0x000080       data     static E:\Repository\university\Main.X\KP.ASM
+              STATUS_TEMP   0x000081       data     static E:\Repository\university\Main.X\KP.ASM
+                 BSR_TEMP   0x000082       data     static E:\Repository\university\Main.X\KP.ASM
+
+
