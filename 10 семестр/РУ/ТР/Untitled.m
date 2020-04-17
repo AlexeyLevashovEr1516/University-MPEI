@@ -34,7 +34,7 @@ theta = m_theta + 3*sigma_theta;
 figure
 subplot(3,1,1)
 hold on; grid on;
-ylim([0 0.04]);
+ylim([0 0.045]);
 plot(Sksi,m_theta);
 title('Зависимость m_\theta(S_\xi)')
 ylabel('m_\theta, град');
@@ -42,7 +42,7 @@ xlabel('S_\xi, В^2с');
 
 subplot(3,1,2)
 hold on; grid on;
-ylim([0 2.5]);
+ylim([0 3]);
 plot(Sksi,sigma_theta);
 title('Зависимость \sigma_\theta(S_\xi)')
 ylabel('\sigma_\theta, град');
@@ -50,7 +50,7 @@ xlabel('S_\xi, В^2с');
 
 subplot(3,1,3)
 hold on; grid on;
-ylim([0 7]);
+ylim([0 8]);
 plot(Sksi,theta);
 title('Зависимость \theta_{max}(S_\xi)')
 ylabel('\theta_{max}, град');
