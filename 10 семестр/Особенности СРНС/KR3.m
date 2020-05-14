@@ -1,135 +1,153 @@
 close all; clear all; clc;
 format long
 
-% GPS L2C
+%% GPS L2C
 f_L2 = 1227.6e6; % Несущая частота [Гц]
 
+%% Нав. сообщение Navigation Data
+chip_ND = 20e-3; % Длительность элементарного символа [с]
+G_ND = [-1 1]; % Содержание нав. сообщения
+L_ND = length(G_ND);
+
+%% Формирование ДК 
 % CM-код (информационная компонента)
-T_cm = 20e-3; % Период кода [с]
-L_cm = 10230; % Длина кода [бит]
-Ft_cm = 0.5115e6; % Частота выборки символов [бит/с]
-chip_cm = 1/Ft_cm; % Длительность элементарного символа [с]
+T_CM = 20e-3; % Период кода [с]
+L_CM = 10230; % Длина кода [бит]
+Ft_CM = 0.5115e6; % Частота выборки символов [бит/с]
+chip_CM = 1/Ft_CM; % Длительность элементарного символа [с]
 
 % CL-код (пилотная компонента)
-T_cl = 1.5; % Период кода [с]
-L_cl = 767250; % Длина кода [бит]
-Ft_cl = 0.5115e6; % Частота выборки символов [бит/с]
-chip_cl = 1/Ft_cl; % Длительность элементарного символа [с]
+T_CL = 1.5; % Период кода [с]
+L_CL = 767250; % Длина кода [бит]
+Ft_CL = 0.5115e6; % Частота выборки символов [бит/с]
+chip_CL = 1/Ft_CL; % Длительность элементарного символа [с]
 
-% Нав. сообщение
-chip_nd = 20e-3; % Длительность элементарного символа [с]
-G_nav_data = [-1 1]; % Содержание нав. сообщения
+% Начальное состояние регистров сдвига (Initial Shift Register State)
+ISRS_CM = [1 1 1 1 0 1 1 1 0 0 0 0 0 0 1 1 0 0 0 0 0 0 1 1 1 0 1]; %756014035
+ISRS_CL = [1 0 1 0 0 0 1 1 0 1 1 0 0 0 1 0 0 0 0 1 1 1 1 0 0 1 0]; %506610362
 
-% Формирования ДК CM-код
-reg_cm = -ones(1,27); % Начально состояние регистра
-for k = 1:L_cm
-    % Выход
-    G_cm(k) = reg_cm(27);
+% Расчет ДК
+DK_L2C_CM_out = DK_L2C_calc( ISRS_CM,L_CM );
+DK_L2C_CL_out = DK_L2C_calc( ISRS_CL,L_CL );
+
+%% Натягивание на время
+fc = 2.046e6; % Ширина спектра по главномым лепесткам - частота выборки символов ДК
+fs = 4 * fc; % Частота дискретизации
+ts = 1 / fs; % Период дискретизации
+f0 = fs / 4; % Промежуточная частота 
+A = 1; % Амплитуда
+
+k = 0; % номер текущего отсчета
+tk = 0; % Время старта
+toe = 20e-3; % Время окончания 
+t_akf = [-toe+ts:ts:toe-ts];
+
+while tk <= toe
+    k = k + 1;
+    tout(k) = tk;
     
-    % Обратная связь
-    feedback = reg_cm(3)*reg_cm(6)*reg_cm(8)*reg_cm(11)*reg_cm(14)*reg_cm(16)*reg_cm(18)*reg_cm(21)*reg_cm(22)*reg_cm(23)*reg_cm(24)*reg_cm(27);
+    %Формирование CM-кода
+    N_chip_CM(k) = mod( fix(tk/chip_CM), L_CM ) + 1;
+    DK_out_CM(k) = DK_L2C_CM_out(N_chip_CM(k));
     
-    % Сдвиг
-    reg_cm(2:27) = reg_cm(1:26);
-    reg_cm(1) = feedback;
-end
-
-% Формирования ДК CL-код
-reg_cl = -ones(1,27); % Начально состояние регистра
-for k = 1:L_cl
-    % Выход
-    G_cl(k) = reg_cl(27);
+    % Формирование CL-кода
+    N_chip_CL(k) = mod( fix(tk/chip_CL), L_CL ) + 1;
+    DK_out_CL(k) = DK_L2C_CL_out(N_chip_CL(k));
     
-    % Обратная связь
-    feedback = reg_cl(3)*reg_cl(6)*reg_cl(8)*reg_cl(11)*reg_cl(14)*reg_cl(16)*reg_cl(18)*reg_cl(21)*reg_cl(22)*reg_cl(23)*reg_cl(24)*reg_cl(27);
+    % Формирование навигационного сообщения
+    N_chip_ND(k) = mod( fix(tk/chip_ND), L_ND ) + 1;
+    DK_out_ND(k) = G_ND(N_chip_ND(k));
     
-    % Сдвиг
-    reg_cl(2:27) = reg_cl(1:26);
-    reg_cl(1) = feedback;
-end
-
-% Натягивание на время
-delta_f = 2.046e6;
-fs = 4 * delta_f;
-ts = 1 / fs;
-f0 = fs / 4;
-A = 1;
-
-tos = 0;
-tof = 20e-3;
-t = tos:ts:tof;
-N = length(t);
-
-k0_cm = 1;
-k1_cm = 0;
-G1_cm = G_cm(1);
-
-for k = 1:N
-    tk = ts*k;
-    chipk_cm = k0_cm * chip_cm;
-    
-    if tk == chipk_cm
-        k0_cm = k0_cm + 1;
-        if k0_cm == L_cm*(k1_cm+1)
-            k1_cm = k1_cm + 1;
-        end
-        if k1_cm == 0
-            Gk = k0_cm;
-        else
-            Gk = k0_cm - k1_cm*L_cm + 1;
-        end
-        G1_cm = G_cm(Gk);
+    % временное уплотнение Time Multiplexing
+    TM_valid(k) = mod( fix(2*(tk/chip_CM)), 2 );
+    if TM_valid(k)
+        DKout(k) = DK_out_CL(k);
+    else
+        DKout(k) = DK_out_CM(k)*DK_out_ND(k);
     end
-    Gcm(k) = G1_cm;
+
+    tk = tk + ts;
 end
 
-k0_cl = 1;
-k1_cl = 0;
-G1_cl = G_cl(1);
+signal_L2C = A*DKout.*cos(2*pi*f0*tout);
 
-for k = 1:N
-    tk = ts*k;
-    chipk_cl = k0_cl * chip_cm;
-    
-    if tk == chipk_cl
-        k0_cl = k0_cl + 1;
-        if k0_cl == L_cl*(k1_cl+1)
-            k1_cl = k1_cl + 1;
-        end
-        if k1_cl == 0
-            Gk = k0_cl;
-        else
-            Gk = k0_cl - k1_cl*L_cl + 1;
-        end
-        G1_cl = G_cl(Gk);
-    end
-    Gcl(k) = G1_cl;
-end
+%% Энергетический спектр и АКФ
+% ДК CL
+S_CL = fft(DK_out_CL);
+SS_CL = S_CL.*conj(S_CL);
+AKF_CL = real( ifft(SS_CL) );
+AKF_CL_plot = [AKF_CL(length(AKF_CL):-1:2),AKF_CL];
 
-s_L2C = A*Gcm.*cos(2*pi*f0*t);
+% ДК CM
+S_CM = fft(DK_out_CM);
+SS_CM = S_CM.*conj(S_CM);
+AKF_CM = real( ifft(SS_CM) );
+AKF_CM_plot = [AKF_CM(length(AKF_CM):-1:2),AKF_CM];
 
-% Графики
-% figure
-% subplot(3,1,1)
-% hold on
-% grid on
-% plot(t, Gcm)
-% title('ДК CM')
-% 
-% subplot(3,1,2)
-% hold on
-% grid on
-% plot(t, Gcl)
-% title('ДК CL')
-% 
-% subplot(3,1,3)
-% hold on
-% grid on
-% plot(t, s_L2C)
-% title('Сигнал L2C')
+% Сигнал
+F = 0:1/toe:(fs-1/toe); % Формирование оси частот
+
+S_signal = fft(signal_L2C);
+SS_signal = S_signal.*conj(S_signal);
+SSS_signal = 2*SS_signal(1:length(F));
+
+AKF_signal = real( ifft(SSS_signal) );
+AKF_signal_plot = [AKF_signal(length(AKF_signal):-1:2),AKF_signal];
+
+%% Графики
+figure
+hold on
+grid on
+plot(tout*1e6, signal_L2C)
+xlim([0 5]*chip_CM*1e6)
+title('Сигнал L2C')
+xlabel('Время, мкс')
+ylabel('Амплитуда, В')
 
 figure
 hold on
 grid on
-plot(t, s_L2C, ':')
-plot(t, Gcm)
+plot(tout*1e3,DKout)
+xlabel('Время, мс')
+
+figure
+hold on
+grid on
+plot(tout*1e3,N_chip_CM,tout*1e3,N_chip_CL,tout*1e3,TM_valid)
+legend('DK CM','DK CL','TM valid')
+xlabel('Время, мс')
+
+figure
+hold on
+grid on
+plot(F*1e-6, 10*log10(abs(SSS_signal)/abs(max(SSS_signal))))
+xlim([0 2*fc]*1e-6)
+title('Энергеический спектр сигнала GPS L2C')
+xlabel('Частота, МГц')
+ylabel('S(f), дБ')
+
+figure
+hold on
+grid on
+plot(t_akf*1e3, AKF_signal_plot)
+title('Автокорреляционная функция R(\tau) сигнала GPS L2C')
+ylabel('R(\tau)');
+xlabel('\tau, мс');
+% 
+% figure
+% hold on
+% grid on
+% plot([-length(AKF_CM)+1:length(AKF_CM)-1], AKF_CM_plot)
+% xlim([-length(AKF_CM) length(AKF_CM)]);
+% title('Автокорреляционная функция R(\tau) CM кода')
+% ylabel('R(\tau)');
+% xlabel('\tau, с');
+% 
+% figure
+% hold on
+% grid on
+% plot([-length(AKF_CL)+1:length(AKF_CL)-1], AKF_CL_plot)
+% xlim([-length(AKF_CL) length(AKF_CL)]);
+% title('Автокорреляционная функция R(\tau) CL кода')
+% ylabel('R(\tau)');
+% xlabel('\tau, с');
